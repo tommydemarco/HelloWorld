@@ -1,0 +1,59 @@
+.menu {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  margin: 0 auto;
+
+  &__inner {
+    margin-left: 50px;
+  }
+
+  &__button {
+    outline: 0;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  &__burger-menu {
+    display: block;
+    background-image: linear-gradient(
+      90deg
+      ,var(--color-headline-1),var(--color-orange));
+    width: 60px;
+    height: 5px;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 5px;
+      width: 60px;
+      background-image: linear-gradient(
+      90deg
+      ,var(--color-headline-1),var(--color-orange));
+    }
+
+    &::after {
+      top: -17px;
+    }
+
+    &::before {
+      top: 17px;
+    }
+  }
+}
