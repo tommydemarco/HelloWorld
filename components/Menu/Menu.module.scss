@@ -35,6 +35,7 @@
     width: 60px;
     height: 5px;
     position: relative;
+    backface-visibility: hidden;
 
     &::after,
     &::before {
@@ -46,6 +47,7 @@
       background-image: linear-gradient(
       90deg
       ,var(--color-headline-1),var(--color-orange));
+      backface-visibility: hidden;
     }
 
     &::after {

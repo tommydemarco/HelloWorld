@@ -1,24 +1,63 @@
 .start-hero {
-  width: 100%;
-  background-color: var(--color-dark-1);
+    width: 100%;
+    background-color: var(--color-dark-1);
 
-  &__inner-container {
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
+    &__inner-container {
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
 
-    > * {
-      width: 50%;
-      padding: 30px;
+        > * {
+            width: 50%;
+            padding: 30px;
+        }
     }
-  }
 
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+    &__image-block {
+        align-self: center;
+        max-height: 80%;
+        height: 100%;
+        overflow: hidden;
+        padding: 50px;
+        position: relative;
+
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100px;
+          height: 10px;
+          background-color: var(--color-white);
+        }
+
+        &::after {
+          top: 25px;
+          right: 50px;
+        }
+
+        &::before {
+          bottom: 25px;
+          left: 50px;
+        }
+    }
+
+    &__image-container {
+      overflow: hidden;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__button-container {
+      margin-top: 20px;
+    }
 }
