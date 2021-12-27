@@ -3,6 +3,8 @@ import SectionHeadline from '../SectionHeadline';
 import Button from '../Button';
 import styles from './StartHero.module.scss';
 
+import scrollToElement from '../../utils/scrollToElement';
+
 interface StartHeroProps {
     headline: string;
     subtext: string;
@@ -11,7 +13,9 @@ interface StartHeroProps {
 }
 
 const StartHero: React.FC<StartHeroProps> = (props) => {
-    const scrollToContent = () => {};
+    const scrollToStack = () => {
+        scrollToElement('#stack');
+    };
 
     return (
         <section className={styles['start-hero']}>
@@ -20,8 +24,8 @@ const StartHero: React.FC<StartHeroProps> = (props) => {
                     <div className={styles['start-hero__image-container']}>
                         <Image
                             src={props.imageSrc}
-                            height="500"
-                            width="500"
+                            height="700"
+                            width="700"
                             alt={props.imageAlt}
                         />
                     </div>
@@ -30,11 +34,9 @@ const StartHero: React.FC<StartHeroProps> = (props) => {
                     <SectionHeadline element="div" main>
                         {props.headline}
                     </SectionHeadline>
-                    <p className={styles['start-hero__subtext']}>
-                        {props.subtext}
-                    </p>
+                    <p>{props.subtext}</p>
                     <div className={styles['start-hero__button-container']}>
-                        <Button onClick={scrollToContent}>View my stack</Button>
+                        <Button onClick={scrollToStack}>View my stack</Button>
                     </div>
                 </div>
             </div>

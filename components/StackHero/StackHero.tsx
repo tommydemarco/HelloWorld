@@ -2,13 +2,22 @@ import SectionHeadline from '../SectionHeadline';
 import styles from './StackHero.module.scss';
 
 interface StackHeroProps {
+    sectionId: string;
     headline: string;
+    subtext: string;
 }
 
-const StackHero: React.FC<StackHeroProps> = ({ headline }) => {
+const StackHero: React.FC<StackHeroProps> = ({
+    headline,
+    sectionId,
+    subtext,
+}) => {
     return (
-        <section className={styles['stack-hero']}>
-            <SectionHeadline element="h2">{headline}</SectionHeadline>
+        <section id={sectionId} className={styles['stack-hero']}>
+            <header className={styles['stack-hero__header']}>
+                <SectionHeadline element="h2">{headline}</SectionHeadline>
+                <p>{subtext}</p>
+            </header>
         </section>
     );
 };

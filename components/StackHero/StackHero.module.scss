@@ -1,4 +1,11 @@
 .stack-hero {
   display: block;
-  height: 80vh;
+  height: 100vh;
+  background-color: var(--color-dark-2);
+
+  &__header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0 10px 50px;
+  }
 }

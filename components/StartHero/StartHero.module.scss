@@ -3,15 +3,21 @@
     background-color: var(--color-dark-1);
 
     &__inner-container {
-        height: 100vh;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         width: 80%;
+        max-width: 1400px;
+        height: 100vh;
 
         > * {
             width: 50%;
             padding: 30px;
+        }
+
+        > *:last-child {
+          width: 50%;
+          padding: 10px;
         }
     }
 

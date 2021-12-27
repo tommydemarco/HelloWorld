@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 // components
+import StackHero from '../components/StackHero';
 import StartHero from '../components/StartHero';
 import Menu from '../components/Menu';
 
@@ -22,6 +23,11 @@ const Home: NextPage = () => {
                 subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                 imageSrc="/portrait.jpg"
                 imageAlt="A portrait of a web developer"
+            />
+            <StackHero
+                sectionId="stack"
+                headline="The stack"
+                subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             />
         </>
     );
