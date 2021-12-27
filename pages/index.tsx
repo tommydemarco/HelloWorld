@@ -6,6 +6,9 @@ import StackHero from '../components/StackHero';
 import StartHero from '../components/StartHero';
 import Menu from '../components/Menu';
 
+// data
+import { stackInfo } from "../data/stackInfo"
+
 const Home: NextPage = () => {
     return (
         <>
@@ -28,6 +31,7 @@ const Home: NextPage = () => {
                 sectionId="stack"
                 headline="The stack"
                 subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                stackInfo={stackInfo}
             />
         </>
     );

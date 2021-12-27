@@ -1,0 +1,8 @@
+.stack-card {
+  padding: 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
