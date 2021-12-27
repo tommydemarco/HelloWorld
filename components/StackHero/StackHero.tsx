@@ -24,7 +24,9 @@ const StackHero: React.FC<StackHeroProps> = ({
                 <SectionHeadline element="h2">{headline}</SectionHeadline>
                 <p>{subtext}</p>
             </header>
-            <StackSlider stackInfo={stackInfo} />
+            <div className={styles['stack-hero__slider-container']}>
+                <StackSlider stackInfo={stackInfo} />
+            </div>
         </section>
     );
 };

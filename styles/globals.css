@@ -18,8 +18,16 @@ html {
   font-family: 'Georama', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p {
   color: var(--color-white);
   font-size: 22px;
   font-family: 'Georama', sans-serif;
+}
+
+.swiper {
+  overflow: visible!important;
 }

@@ -12,17 +12,14 @@ const StackCard: React.FC<StackInfo> = ({
 }) => {
     return (
         <article className={styles['stack-card']}>
+            <div className={styles['stack-card__img-container']}>
+                <Image src={imageSrc} alt={imageAlt} height="300" width="300" />
+            </div>
             <div className={styles['stack-card__container']}>
-                <div className={styles['stack-card__img-container']}>
-                    <Image
-                        src={imageSrc}
-                        alt={imageAlt}
-                        height="300"
-                        width="300"
-                    />
-                </div>
                 <header className={styles['stack-card__header']}>
-                    <div>{title}</div>
+                    <div className={styles['stack-card__card-title']}>
+                        {title}
+                    </div>
                 </header>
                 <div className={styles['stack-card__description']}>
                     {description}

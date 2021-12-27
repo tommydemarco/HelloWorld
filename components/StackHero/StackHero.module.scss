@@ -1,11 +1,17 @@
 .stack-hero {
   display: block;
-  height: 100vh;
   background-color: var(--color-dark-2);
+  padding-bottom: 40px;
 
   &__header {
     width: 80%;
     margin: 0 auto;
     padding: 35px 0 10px 50px;
+  }
+
+  &__slider-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
   }
 }

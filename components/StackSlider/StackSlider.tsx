@@ -1,7 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import StackCard from '../StackCard';
 
-import 'swiper/css/bundle';
+import styles from './StackSlider.module.scss';
 
 export interface StackSliderProps {
     stackInfo: StackInfo[];
@@ -16,20 +15,19 @@ export interface StackInfo {
 
 const StackSlider: React.FC<StackSliderProps> = ({ stackInfo }) => {
     return (
-        <Swiper slidesPerView={3} spaceBetween={30}>
+        <div className={styles['stack-slider']}>
             {stackInfo.map((stackInfo: StackInfo) => {
                 return (
-                    <SwiperSlide key={stackInfo.title}>
-                        <StackCard
-                            title={stackInfo.title}
-                            description={stackInfo.description}
-                            imageAlt={stackInfo.imageAlt}
-                            imageSrc={stackInfo.imageSrc}
-                        />
-                    </SwiperSlide>
+                    <StackCard
+                        key={stackInfo.title}
+                        title={stackInfo.title}
+                        description={stackInfo.description}
+                        imageAlt={stackInfo.imageAlt}
+                        imageSrc={stackInfo.imageSrc}
+                    />
                 );
             })}
-        </Swiper>
+        </div>
     );
 };
 
