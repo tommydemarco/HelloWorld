@@ -1,7 +1,7 @@
 .stack-hero {
   display: block;
   background-color: var(--color-dark-2);
-  padding-bottom: 40px;
+  height: 600vh;
 
   &__header {
     width: 80%;
@@ -12,6 +12,7 @@
   &__slider-container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 0;
+    height: calc(100vh - 150px);
   }
 }

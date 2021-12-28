@@ -1,0 +1,38 @@
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  font-size: 19px;
+  padding: 10px 5px;
+  transition: all 0.2s ease;
+
+  &__text {
+    transition: all 0.2s ease;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+
+    svg {
+      fill: var(--color-white);
+    }
+  }
+
+  &:hover {
+    color: var(--color-grey-light);
+
+    .footer-link__icon {
+      transform: scale(1.15);
+    }
+
+    .footer-link__text {
+      transform: translateX(3px);
+    }
+  }
+}

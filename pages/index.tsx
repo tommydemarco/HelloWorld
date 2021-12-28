@@ -5,9 +5,11 @@ import Head from 'next/head';
 import StackHero from '../components/StackHero';
 import StartHero from '../components/StartHero';
 import Menu from '../components/Menu';
+import Footer from '../components/Footer';
+import FooterLink from '../components/FooterLink';
 
 // data
-import { stackInfo } from "../data/stackInfo"
+import { stackInfo } from '../data/stackInfo';
 
 const Home: NextPage = () => {
     return (
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Menu />
+            {/* <Menu /> */}
             <main>
                 <StartHero
                     headline="Hello World."
@@ -34,6 +36,24 @@ const Home: NextPage = () => {
                     subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                     stackInfo={stackInfo}
                 />
+                <Footer
+                    textTitle="Bye, World!"
+                    textBody="Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!"
+                    endText="Coded with &#10084; with Next.js and other cool stuff"
+                >
+                    <FooterLink element="link" href="#">
+                        Github
+                    </FooterLink>
+                    <FooterLink element="link" href="#">
+                        Linkedin
+                    </FooterLink>
+                    <FooterLink element="link" href="#">
+                        Contact me
+                    </FooterLink>
+                    <FooterLink element="link" href="#">
+                        Codewars
+                    </FooterLink>
+                </Footer>
             </main>
         </>
     );

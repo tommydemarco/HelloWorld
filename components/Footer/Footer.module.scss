@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--color-dark-1);
+  padding: 50px 0 0;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  &__links-container {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+
+    > * {
+      width: 50%;
+    }
+  }
+
+  &__end-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 40px;
+    background-color: var(--color-black);
+    color: white;
+  }
+}
