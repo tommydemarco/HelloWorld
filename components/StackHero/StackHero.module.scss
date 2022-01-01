@@ -1,7 +1,14 @@
 .stack-hero {
   display: block;
   background-color: var(--color-dark-2);
-  height: 600vh;
+  height: 650vh;
+
+  &__content {
+    min-height: 100vh;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+  }
 
   &__header {
     width: 80%;

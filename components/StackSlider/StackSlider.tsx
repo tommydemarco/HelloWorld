@@ -4,6 +4,7 @@ import styles from './StackSlider.module.scss';
 
 export interface StackSliderProps {
     stackInfo: StackInfo[];
+    translateOf: number;
 }
 
 export interface StackInfo {
@@ -13,9 +14,15 @@ export interface StackInfo {
     imageAlt: string;
 }
 
-const StackSlider: React.FC<StackSliderProps> = ({ stackInfo }) => {
+const StackSlider: React.FC<StackSliderProps> = ({
+    stackInfo,
+    translateOf,
+}) => {
     return (
-        <div className={styles['stack-slider']}>
+        <div
+            style={{ transform: 'translateX(-' + translateOf + '%)' }}
+            className={styles['stack-slider']}
+        >
             {stackInfo.map((stackInfo: StackInfo) => {
                 return (
                     <StackCard
