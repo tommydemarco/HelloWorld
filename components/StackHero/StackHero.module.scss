@@ -8,18 +8,20 @@
     max-height: 100vh;
     position: sticky;
     top: 0;
+    overflow-x: hidden;
   }
 
   &__header {
     width: 80%;
     margin: 0 auto;
-    padding: 35px 0 10px 50px;
+    padding: 45px 0 10px 50px;
   }
 
   &__slider-container {
     width: 80%;
     margin: 0 auto;
-    padding: 40px 0;
-    height: calc(100vh - 150px);
+    padding: 40px 0 70px;
+    height: calc(100vh - 160px);
+    display: flex;
   }
 }

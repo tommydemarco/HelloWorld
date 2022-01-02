@@ -37,7 +37,7 @@ const StackHero: React.FC<StackHeroProps> = ({
                 return percentage;
             });
         };
-        window.addEventListener('scroll', handleScroll, false);
+        window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -57,7 +57,7 @@ const StackHero: React.FC<StackHeroProps> = ({
                 </header>
                 <div className={styles['stack-hero__slider-container']}>
                     <StackSlider
-                        translateOf={scrollPercentage * 0.8}
+                        translateOf={scrollPercentage}
                         stackInfo={stackInfo}
                     />
                 </div>

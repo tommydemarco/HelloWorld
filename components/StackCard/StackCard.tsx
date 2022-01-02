@@ -5,12 +5,7 @@ import styles from './StackCard.module.scss';
 
 import { StackInfo } from '../StackSlider/StackSlider';
 
-const StackCard: React.FC<StackInfo> = ({
-    title,
-    description,
-    imageSrc,
-    imageAlt,
-}) => {
+const StackCard: React.FC<StackInfo> = ({ title, description, icon }) => {
     const cardRef = useRef<HTMLDivElement>(null);
     const [cardWidth, setCardWidth] = useState(300);
 
@@ -18,7 +13,7 @@ const StackCard: React.FC<StackInfo> = ({
         // if (cardRef.current === null) return;
         // const cardScrollHeight = cardRef.current.scrollHeight;
         // const cardHeight = cardRef.current.clientHeight;
-        // if (cardScrollHeight < cardHeight) return;
+        // if (cardScrollHeight <= cardHeight) return;
         // setCardWidth((previousWidth) => previousWidth + 5);
     }, [cardWidth]);
 
@@ -34,13 +29,17 @@ const StackCard: React.FC<StackInfo> = ({
             <div className={styles['stack-card__container']}>
                 <header className={styles['stack-card__header']}>
                     <div className={styles['stack-card__card-title']}>
-                        {title}
+                        <i className={styles['stack-card__title-icon']}>
+                            {icon}
+                        </i>
+                        <span>{title}</span>
                     </div>
                 </header>
                 <div className={styles['stack-card__description']}>
                     {description}
                 </div>
             </div>
+            <div className={styles['stack-card__icon-background']}>{icon}</div>
         </article>
     );
 };

@@ -16,11 +16,35 @@
   &__container {
     display: flex;
     flex-direction: column;
+    z-index: 9;
+    position: relative;
   }
 
   &__card-title {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title-icon {
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    height: 30px;
+    width: 30px;
+    fill: var(--color-dark-1);
+    margin-right: 10px;
+  }
+
+  &__icon-background {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    bottom: -30%;
+    right: -20%;
+    fill: var(--color-grey);
+    z-index: 0;
   }
 }

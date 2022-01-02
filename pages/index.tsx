@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* <Menu /> */}
+            <Menu />
             <main>
                 <StartHero
                     headline="Hello World."
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 <Footer
                     textTitle="Bye, World!"
                     textBody="Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!"
-                    endText="Coded with &#10084; with Next.js and other cool stuff"
+                    endText="Coded with &#10084; using Next.js and other cool stuff"
                 >
                     <FooterLink element="link" href="#">
                         Github

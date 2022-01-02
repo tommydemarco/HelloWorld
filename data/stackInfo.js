@@ -1,44 +1,45 @@
+import Vue from '../assets/svgs/logo-vue.svg';
+import Stencil from '../assets/svgs/logo-stencil.svg';
+import React from '../assets/svgs/logo-react.svg';
+import JavaScript from '../assets/svgs/logo-javascript.svg';
+import CSS from '../assets/svgs/logo-css3.svg';
+import Python from '../assets/svgs/logo-python.svg';
+
 export const stackInfo = [
     {
-        title: 'React',
+        title: 'Stencil',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <Stencil />,
     },
     {
         title: 'Vue',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <Vue />,
     },
     {
-        title: 'Stencil',
+        title: 'React',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <React />,
     },
     {
-        title: 'Next.js',
+        title: 'Vanilla JS',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <JavaScript />,
     },
     {
-        title: 'Gatsby',
+        title: 'CSS',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <CSS />,
     },
     {
-        title: 'Cypress',
+        title: 'Python',
         description:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
-        imageSrc: 'https://source.unsplash.com/random/300x300',
-        imageAlt: 'image',
+        icon: <Python />,
     },
 ];
