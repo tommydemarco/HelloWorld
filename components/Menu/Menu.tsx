@@ -48,6 +48,20 @@ const Menu = () => {
                     </li>
                 </ul>
             </nav>
+            <div className={styles['menu__language-change']}>
+                <button
+                    className={styles['menu__language-item']}
+                    onClick={() => {}}
+                >
+                    EN
+                </button>
+                <button
+                    onClick={() => {}}
+                    className={styles['menu__language-item']}
+                >
+                    DE
+                </button>
+            </div>
         </div>
     );
 };

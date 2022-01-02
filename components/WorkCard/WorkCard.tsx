@@ -14,11 +14,18 @@ const WorkCard: React.FC<WorkInfo> = ({ title, timeRange, description }) => {
             ref={cardRef}
             className={styles['work-card']}
         >
-            <div className={styles['work-card__title']}>{title}</div>
+            <div className={styles['work-card__title'] + ' card-title'}>
+                {title}
+            </div>
             <div className={styles['work-card__time-range']}>{timeRange}</div>
-            <div className={styles['work-card__description']}>
+            <div
+                className={
+                    styles['work-card__description'] + ' card-description'
+                }
+            >
                 {description}
             </div>
+            <div className={styles['work-card__timeline']}></div>
         </article>
     );
 };

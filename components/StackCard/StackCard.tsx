@@ -28,14 +28,22 @@ const StackCard: React.FC<StackInfo> = ({ title, description, icon }) => {
             </div> */}
             <div className={styles['stack-card__container']}>
                 <header className={styles['stack-card__header']}>
-                    <div className={styles['stack-card__card-title']}>
+                    <div
+                        className={
+                            styles['stack-card__card-title'] + ' card-title'
+                        }
+                    >
                         <i className={styles['stack-card__title-icon']}>
                             {icon}
                         </i>
                         <span>{title}</span>
                     </div>
                 </header>
-                <div className={styles['stack-card__description']}>
+                <div
+                    className={
+                        styles['stack-card__description'] + ' card-description'
+                    }
+                >
                     {description}
                 </div>
             </div>
