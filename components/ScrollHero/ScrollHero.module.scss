@@ -1,7 +1,10 @@
 .scroll-hero {
   display: block;
   background-color: var(--color-dark-2);
-  height: 650vh;
+
+  &--primary {
+    background-color: var(--color-dark-1);
+  }
 
   &__content {
     min-height: 100vh;

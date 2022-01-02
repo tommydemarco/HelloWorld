@@ -2,18 +2,21 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 // components
-import StackHero from '../components/ScrollHero';
+import ScrollHero from '../components/ScrollHero';
 import StartHero from '../components/StartHero';
 import StackCard from '../components/StackCard';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import FooterLink from '../components/FooterLink';
+import WorkCard from '../components/WorkCard';
 
 // data
 import { stackInfo } from '../data/stackInfo';
+import { workInfo } from '../data/workInfo';
 
 // types
 import { StackInfo } from '../data/stackInfo.types';
+import { WorkInfo } from '../data/workInfo.types';
 
 const Home: NextPage = () => {
     return (
@@ -34,10 +37,11 @@ const Home: NextPage = () => {
                     imageSrc="/portrait.jpg"
                     imageAlt="A portrait of a web developer"
                 />
-                <StackHero
+                <ScrollHero
                     sectionId="stack"
                     headline="The stack"
                     subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    height="650vh"
                 >
                     {stackInfo.map((stackInfo: StackInfo) => {
                         return (
@@ -49,7 +53,25 @@ const Home: NextPage = () => {
                             />
                         );
                     })}
-                </StackHero>
+                </ScrollHero>
+                <ScrollHero
+                    sectionId="work-experience"
+                    headline="Work experience"
+                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    height="400vh"
+                    primary
+                >
+                    {workInfo.map((workInfo: WorkInfo) => {
+                        return (
+                            <WorkCard
+                                key={workInfo.title}
+                                title={workInfo.title}
+                                description={workInfo.description}
+                                timeRange={workInfo.timeRange}
+                            />
+                        );
+                    })}
+                </ScrollHero>
                 <Footer
                     textTitle="Bye, World!"
                     textBody="Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!"

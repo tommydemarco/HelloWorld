@@ -10,6 +10,8 @@ interface StackHeroProps {
     headline: string;
     subtext: string;
     children: React.ReactNode;
+    primary?: boolean;
+    height: string;
 }
 
 const StackHero: React.FC<StackHeroProps> = ({
@@ -17,6 +19,8 @@ const StackHero: React.FC<StackHeroProps> = ({
     sectionId,
     subtext,
     children,
+    primary,
+    height,
 }) => {
     const stackHeroRef = useRef<HTMLDivElement>(null);
     const [scrollPercentage, setScrollPercentage] = useState<number>(0);
@@ -42,11 +46,15 @@ const StackHero: React.FC<StackHeroProps> = ({
         };
     }, [stackHeroRef]);
 
+    const classes = [styles['scroll-hero']];
+    if (primary) classes.push(styles['scroll-hero--primary']);
+
     return (
         <section
             ref={stackHeroRef}
             id={sectionId}
-            className={styles['scroll-hero']}
+            className={classes.join(' ')}
+            style={{ height: height }}
         >
             <div className={styles['scroll-hero__content']}>
                 <header className={styles['scroll-hero__header']}>
