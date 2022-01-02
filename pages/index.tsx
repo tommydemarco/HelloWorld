@@ -2,14 +2,18 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 // components
-import StackHero from '../components/StackHero';
+import StackHero from '../components/ScrollHero';
 import StartHero from '../components/StartHero';
+import StackCard from '../components/StackCard';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import FooterLink from '../components/FooterLink';
 
 // data
 import { stackInfo } from '../data/stackInfo';
+
+// types
+import { StackInfo } from '../data/stackInfo.types';
 
 const Home: NextPage = () => {
     return (
@@ -34,8 +38,18 @@ const Home: NextPage = () => {
                     sectionId="stack"
                     headline="The stack"
                     subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                    stackInfo={stackInfo}
-                />
+                >
+                    {stackInfo.map((stackInfo: StackInfo) => {
+                        return (
+                            <StackCard
+                                key={stackInfo.title}
+                                title={stackInfo.title}
+                                description={stackInfo.description}
+                                icon={stackInfo.icon}
+                            />
+                        );
+                    })}
+                </StackHero>
                 <Footer
                     textTitle="Bye, World!"
                     textBody="Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!"

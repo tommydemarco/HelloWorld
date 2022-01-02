@@ -19,6 +19,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_document.tsx"
-  ],
+,
+"data/stackInfo.js"
+],
   "exclude": ["node_modules"]
 }

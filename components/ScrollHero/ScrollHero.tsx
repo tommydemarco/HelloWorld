@@ -1,24 +1,22 @@
 import { useState, useEffect, useRef } from 'react';
 
 import SectionHeadline from '../SectionHeadline';
-import StackSlider from '../StackSlider';
+import StackSlider from '../ScrollSlider';
 
-import styles from './StackHero.module.scss';
-
-import { StackInfo } from '../StackSlider/StackSlider';
+import styles from './ScrollHero.module.scss';
 
 interface StackHeroProps {
     sectionId: string;
     headline: string;
     subtext: string;
-    stackInfo: StackInfo[];
+    children: React.ReactNode;
 }
 
 const StackHero: React.FC<StackHeroProps> = ({
     headline,
     sectionId,
     subtext,
-    stackInfo,
+    children,
 }) => {
     const stackHeroRef = useRef<HTMLDivElement>(null);
     const [scrollPercentage, setScrollPercentage] = useState<number>(0);
@@ -48,18 +46,17 @@ const StackHero: React.FC<StackHeroProps> = ({
         <section
             ref={stackHeroRef}
             id={sectionId}
-            className={styles['stack-hero']}
+            className={styles['scroll-hero']}
         >
-            <div className={styles['stack-hero__content']}>
-                <header className={styles['stack-hero__header']}>
+            <div className={styles['scroll-hero__content']}>
+                <header className={styles['scroll-hero__header']}>
                     <SectionHeadline element="h2">{headline}</SectionHeadline>
                     <p>{subtext}</p>
                 </header>
-                <div className={styles['stack-hero__slider-container']}>
-                    <StackSlider
-                        translateOf={scrollPercentage}
-                        stackInfo={stackInfo}
-                    />
+                <div className={styles['scroll-hero__slider-container']}>
+                    <StackSlider translateOf={scrollPercentage}>
+                        {children}
+                    </StackSlider>
                 </div>
             </div>
         </section>

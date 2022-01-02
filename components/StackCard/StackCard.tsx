@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import styles from './StackCard.module.scss';
 
-import { StackInfo } from '../StackSlider/StackSlider';
+import { StackInfo } from '../ScrollSlider/ScrollSlider';
 
 const StackCard: React.FC<StackInfo> = ({ title, description, icon }) => {
     const cardRef = useRef<HTMLDivElement>(null);

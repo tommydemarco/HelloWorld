@@ -1,21 +1,14 @@
 import { useRef, useState, useEffect } from 'react';
-import StackCard from '../StackCard';
 
-import styles from './StackSlider.module.scss';
+import styles from './ScrollSlider.module.scss';
 
-export interface StackSliderProps {
-    stackInfo: StackInfo[];
+export interface ScrollSliderProps {
+    children: React.ReactNode;
     translateOf: number;
 }
 
-export interface StackInfo {
-    title: string;
-    description: string;
-    icon: React.ReactElement;
-}
-
-const StackSlider: React.FC<StackSliderProps> = ({
-    stackInfo,
+const ScrollSlider: React.FC<ScrollSliderProps> = ({
+    children,
     translateOf,
 }) => {
     const [translateValue, setTranslateValue] = useState<number>(0);
@@ -35,20 +28,11 @@ const StackSlider: React.FC<StackSliderProps> = ({
         <div
             ref={sliderRef}
             style={{ transform: 'translateX(-' + translateValue + 'px)' }}
-            className={styles['stack-slider']}
+            className={styles['scroll-slider']}
         >
-            {stackInfo.map((stackInfo: StackInfo) => {
-                return (
-                    <StackCard
-                        key={stackInfo.title}
-                        title={stackInfo.title}
-                        description={stackInfo.description}
-                        icon={stackInfo.icon}
-                    />
-                );
-            })}
+            {children}
         </div>
     );
 };
 
-export default StackSlider;
+export default ScrollSlider;
