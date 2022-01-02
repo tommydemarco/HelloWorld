@@ -10,6 +10,7 @@ interface StartHeroProps {
     subtext: string;
     imageSrc: string;
     imageAlt: string;
+    buttonText: string;
 }
 
 const StartHero: React.FC<StartHeroProps> = (props) => {
@@ -36,7 +37,9 @@ const StartHero: React.FC<StartHeroProps> = (props) => {
                     </SectionHeadline>
                     <p>{props.subtext}</p>
                     <div className={styles['start-hero__button-container']}>
-                        <Button onClick={scrollToStack}>View my stack</Button>
+                        <Button onClick={scrollToStack}>
+                            {props.buttonText}
+                        </Button>
                     </div>
                 </div>
             </div>

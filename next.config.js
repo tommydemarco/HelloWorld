@@ -4,6 +4,10 @@ module.exports = {
     images: {
         domains: ['source.unsplash.com'],
     },
+    i18n: {
+        locales: ['en', 'de'],
+        defaultLocale: 'en',
+    },
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
