@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 // components
+import EducationCard from '../components/EducationCard';
 import ScrollHero from '../components/ScrollHero';
 import StartHero from '../components/StartHero';
 import StackCard from '../components/StackCard';
@@ -12,12 +13,14 @@ import WorkCard from '../components/WorkCard';
 
 // data
 import { general } from '../data/general';
+import { educationInfo } from '../data/educationInfo';
 import { startInfo } from '../data/startInfo';
 import { stackInfo } from '../data/stackInfo';
 import { workInfo } from '../data/workInfo';
 
 // types
 import { GetStaticProps } from 'next';
+import { EducationInfo } from '../data/educationInfo.types';
 import { StackInfo } from '../data/stackInfo.types';
 import { WorkInfo } from '../data/workInfo.types';
 
@@ -78,6 +81,45 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                                 title={workInfo.title}
                                 description={workInfo.description}
                                 timeRange={workInfo.timeRange}
+                            />
+                        );
+                    })}
+                </ScrollHero>
+                <ScrollHero
+                    sectionId="education-info"
+                    headline="Education"
+                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    height="400vh"
+                >
+                    {educationInfo[chosenLocale].map((educationInfo: any) => {
+                        return (
+                            <EducationCard
+                                key={educationInfo.title}
+                                title={educationInfo.title}
+                                type={educationInfo.type}
+                                organization={educationInfo.organization}
+                                time={educationInfo.time}
+                                assetLink={educationInfo.assetLink}
+                            />
+                        );
+                    })}
+                </ScrollHero>
+                <ScrollHero
+                    sectionId="why-me"
+                    headline="Working with me"
+                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    height="400vh"
+                    primary
+                >
+                    {educationInfo[chosenLocale].map((educationInfo: any) => {
+                        return (
+                            <EducationCard
+                                key={educationInfo.title}
+                                title={educationInfo.title}
+                                type={educationInfo.type}
+                                organization={educationInfo.organization}
+                                time={educationInfo.time}
+                                assetLink={educationInfo.assetLink}
                             />
                         );
                     })}

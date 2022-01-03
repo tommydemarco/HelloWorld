@@ -146,9 +146,7 @@
         font-family: 'Georama', sans-serif;
         font-size: 30px;
         font-weight: bold;
-
-        &:link,
-        &:visited {
+        background: transparent;
             display: inline-block;
             color: white;
             text-decoration: none;
@@ -163,7 +161,10 @@
             );
             background-size: 220%;
             transition: all 0.3s;
-        }
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            
         &:hover {
             color: var(--color-dark-1);
             background-position: 100%;

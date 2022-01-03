@@ -11,12 +11,12 @@
 html {
   --color-black: #282c2c;
   --color-dark-1: #2d3436;
-  --color-dark-2: #485460;
+  --color-dark-2: #3e464e;
   --color-headline-1: #e74c3c;
   --color-headline-2: #f1c40f;
   --color-orange: #f39c12;
   --color-grey: #bdc3c7;
-  --color-grey-light: #ecf0f1;
+  --color-grey-light: #dee4e6;
   --color-white: white;
   font-family: 'Georama', sans-serif;
 }

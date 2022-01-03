@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+
+import { scrollToElement } from '../../utils/scrollToElement';
+
 import styles from './Menu.module.scss';
 
 const Menu = () => {
-
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const buttonClasses = [styles['menu__button']];
@@ -10,6 +12,13 @@ const Menu = () => {
 
     const menuClasses = [styles['menu']];
     if (isOpen) menuClasses.push(styles['menu--open']);
+
+    const goToSection = (section: string): void => {
+        setIsOpen(false);
+        setTimeout(() => {
+            scrollToElement(section);
+        }, 500);
+    };
 
     return (
         <div className={menuClasses.join(' ')}>
@@ -24,27 +33,36 @@ const Menu = () => {
             <nav className={styles['menu__nav']} aria-hidden={!isOpen}>
                 <ul className={styles['menu__list']}>
                     <li className={styles['menu__item']}>
-                        <a href="./home" className={styles['menu__link']}>
-                            Home
-                        </a>
-                    </li>
-                    <li className={styles['menu__item']}>
-                        <a href="./about" className={styles['menu__link']}>
-                            About us
-                        </a>
-                    </li>
-                    <li className={styles['menu__item']}>
-                        <a
-                            href="./testimonials"
+                        <button
+                            onClick={() => goToSection('#stack')}
                             className={styles['menu__link']}
                         >
-                            Testimonials
-                        </a>
+                            Presentation
+                        </button>
                     </li>
                     <li className={styles['menu__item']}>
-                        <a href="./contacts" className={styles['menu__link']}>
-                            Contacts
-                        </a>
+                        <button
+                            onClick={() => goToSection('#stack')}
+                            className={styles['menu__link']}
+                        >
+                            About us
+                        </button>
+                    </li>
+                    <li className={styles['menu__item']}>
+                        <button
+                            onClick={() => goToSection('#stack')}
+                            className={styles['menu__link']}
+                        >
+                            About us
+                        </button>
+                    </li>
+                    <li className={styles['menu__item']}>
+                        <button
+                            onClick={() => goToSection('#stack')}
+                            className={styles['menu__link']}
+                        >
+                            About us
+                        </button>
                     </li>
                 </ul>
             </nav>
