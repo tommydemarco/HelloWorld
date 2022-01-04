@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 // components
+import ContactCard from '../components/ContactCard';
 import EducationCard from '../components/EducationCard';
 import ScrollHero from '../components/ScrollHero';
 import StartHero from '../components/StartHero';
@@ -12,6 +13,7 @@ import FooterLink from '../components/FooterLink';
 import WorkCard from '../components/WorkCard';
 
 // data
+import { contactInfo } from '../data/contactInfo';
 import { general } from '../data/general';
 import { educationInfo } from '../data/educationInfo';
 import { startInfo } from '../data/startInfo';
@@ -123,6 +125,22 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                             />
                         );
                     })}
+                </ScrollHero>
+                <ScrollHero
+                    sectionId="contacts"
+                    headline="Contacts"
+                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    height="330vh"
+                    card
+                >
+                    <ContactCard
+                        name={contactInfo[chosenLocale].name}
+                        profession={contactInfo[chosenLocale].profession}
+                        location={contactInfo[chosenLocale].location}
+                        phone={contactInfo[chosenLocale].phone}
+                        email={contactInfo[chosenLocale].email}
+                        github={contactInfo[chosenLocale].github}
+                    />
                 </ScrollHero>
                 <Footer
                     textTitle="Bye, World!"

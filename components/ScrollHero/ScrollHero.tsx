@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 import SectionHeadline from '../SectionHeadline';
 import StackSlider from '../ScrollSlider';
+import FlippingCard from '../FlippingCard';
 
 import styles from './ScrollHero.module.scss';
 
@@ -11,6 +12,7 @@ interface StackHeroProps {
     subtext: string;
     children: React.ReactNode;
     primary?: boolean;
+    card?: boolean;
     height: string;
 }
 
@@ -21,6 +23,7 @@ const StackHero: React.FC<StackHeroProps> = ({
     children,
     primary,
     height,
+    card,
 }) => {
     const stackHeroRef = useRef<HTMLDivElement>(null);
     const [scrollPercentage, setScrollPercentage] = useState<number>(0);
@@ -62,9 +65,15 @@ const StackHero: React.FC<StackHeroProps> = ({
                     <p>{subtext}</p>
                 </header>
                 <div className={styles['scroll-hero__slider-container']}>
-                    <StackSlider translateOf={scrollPercentage}>
-                        {children}
-                    </StackSlider>
+                    {card ? (
+                        <FlippingCard translateOf={scrollPercentage}>
+                            {children}
+                        </FlippingCard>
+                    ) : (
+                        <StackSlider translateOf={scrollPercentage}>
+                            {children}
+                        </StackSlider>
+                    )}
                 </div>
             </div>
         </section>
