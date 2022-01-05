@@ -4,5 +4,11 @@ export interface ContactInfo {
   location: string;
   phone: string;
   email: string;
-  github: string;
+  github: SocialLink;
+  linkedin: SocialLink;
+}
+
+interface SocialLink {
+  text: string;
+  link: string;
 }

@@ -140,6 +140,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                         phone={contactInfo[chosenLocale].phone}
                         email={contactInfo[chosenLocale].email}
                         github={contactInfo[chosenLocale].github}
+                        linkedin={contactInfo[chosenLocale].linkedin}
                     />
                 </ScrollHero>
                 <Footer

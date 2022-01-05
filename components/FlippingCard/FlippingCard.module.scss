@@ -11,5 +11,10 @@
         position: relative;
         transform-style: preserve-3d;
         transform-origin: center right;
+        background-image: linear-gradient(
+    90deg
+    ,var(--color-headline-1),var(--color-headline-2));
+    padding: 5px;
+    border-radius: 10px;
     }
 }

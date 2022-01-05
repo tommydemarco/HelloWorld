@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+<defs>
+      <linearGradient id="Gradient4">
+        <stop class="stop1" offset="0%"/>
+        <stop class="stop2" offset="100%"/>
+      </linearGradient>
+      <style type="text/css"><![CDATA[
+        #rect1 { fill: url(#Gradient2); }
+        .stop1 { stop-color: #f39c12; }
+        .stop2 { stop-color: #f1c40f; }
+      ]]></style>
+  </defs>
+<title>Logo Stencil</title><path fill="url(#Gradient4)" d="M188.8 334.07h197.33L279.47 448H83.2zM512 199H106.61L0 313h405.39zM232.2 64h196.6L322.62 177.93H125.87z"/></svg>

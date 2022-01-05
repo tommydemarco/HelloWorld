@@ -1,17 +1,93 @@
 .contact-card {
     &__face {
         position: absolute;
-        height: 100%;
-        width: 100%;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
         backface-visibility: hidden;
+        background-color: var(--color-dark-1);
+        border-radius: 7px;
+        overflow: hidden;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
         &--front {
-          background-color: var(--color-headline-1);
         }
 
         &--back {
-            transform: rotateY(180deg);
-            background-color: var(--color-headline-2);
+            transform: rotateX(180deg);
+            
         }
+    }
+
+    &__name {
+        color: var(--color-white);
+        font-size: 32px;
+    }
+
+    &__profession {
+        color: var(--color-grey);
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    &__location {
+        display: flex;
+        color: var(--color-white);
+        align-items: center;
+
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--color-white)
+        }
+    }
+
+    &__react-icon {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -53px;
+        top: 0;
+        fill: var(--color-orange);
+        opacity: 0.2;
+    }
+
+    &__gitlab-icon {
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        right: -30px;
+        bottom: 50px;
+        opacity: 0.2;
+    }
+
+    &__sass-icon {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -20px;
+        bottom: 30px;
+        opacity: 0.2;
+    }
+
+    &__stencil-icon {
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        right: -30px;
+        top: 5px;
+        opacity: 0.2;
+    }
+
+    &__contact-container {
+        width: 230px;
+        min-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
