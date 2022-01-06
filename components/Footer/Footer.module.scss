@@ -2,16 +2,29 @@
   background-color: var(--color-dark-1);
   padding: 50px 0 0;
 
+  @media (max-width: 500px) {
+    padding: 80px 0 0;
+  }
+
   &__container {
     width: 80%;
     margin: 0 auto;
     display: flex;
     padding-bottom: 50px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 
   &__text {
     width: 50%;
     margin-right: 20px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__links-container {
@@ -23,14 +36,19 @@
     > * {
       width: 50%;
     }
+
+    @media (max-width: 900px) {
+      margin-left: 0;
+    }
   }
 
   &__end-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 35px 40px;
+    padding: 40px 40px;
     background-color: var(--color-black);
     color: white;
+    text-align: center;
   }
 }

@@ -3,7 +3,7 @@ import SectionHeadline from '../SectionHeadline';
 import Button from '../Button';
 import styles from './StartHero.module.scss';
 
-import scrollToElement from '../../utils/scrollToElement';
+import { scrollToElement } from '../../utils/scrollToElement';
 
 interface StartHeroProps {
     headline: string;

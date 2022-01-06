@@ -2,15 +2,15 @@ export const startInfo = {
     en: {
         helloWorld: 'Hello World',
         subtext:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        imageAlt: 'Lorem ipsum dolor',
+            "I'm Tommy, a Frontend Developer working in Germany. I love developing with the newest frontend technologies, and my stack includes React, Stencil, Vue, Ionic and more! I speak fluently German, English, Italian and Spanish. Scroll down to see more about my personal profile, experience and qualifications!",
+        imageAlt: 'A web developer based in germany',
         buttonText: 'View my stack',
     },
     de: {
         helloWorld: 'Hello World',
         subtext:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            'Ich bin Tommy, ein Frontend-Entwickler mit Sitz in Deutschland. Ich liebe es, mit den neuesten Frontend-Technologien zu arbeiten, und mein Stack umfasst React, Stencil, Vue, Ionic und mehr! Ich spreche fließend Deutsch, Englisch, Italienisch und Spanisch. Scrollen Sie nach unten, um mehr über mein persönliches Profil, meine Erfahrungen und Qualifikationen zu erfahren!',
         imageAlt: 'Lorem ipsum dolor',
-        buttonText: 'View my stack',
+        buttonText: 'Mein Stack ansehen',
     },
 };

@@ -11,11 +11,19 @@
     90deg
     ,var(--color-headline-1),var(--color-headline-2));
 
+  @media (max-width: 600px) {
+    font-size: 45px;
+  }
+
   &--main {
     font-size: 80px;
   }
 
   &--tertiary {
     font-size: 40px;
+
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
   }
 }

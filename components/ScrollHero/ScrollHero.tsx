@@ -26,7 +26,9 @@ const StackHero: React.FC<StackHeroProps> = ({
     card,
 }) => {
     const stackHeroRef = useRef<HTMLDivElement>(null);
+    const headerReference = useRef<HTMLDivElement>(null);
     const [scrollPercentage, setScrollPercentage] = useState<number>(0);
+    const [headerHeight, setHeaderHeight] = useState<number>(160);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,6 +51,11 @@ const StackHero: React.FC<StackHeroProps> = ({
         };
     }, [stackHeroRef]);
 
+    useEffect(() => {
+        if (headerReference.current === null) return;
+        setHeaderHeight(headerReference.current.clientHeight + 3);
+    }, [headerReference]);
+
     const classes = [styles['scroll-hero']];
     if (primary) classes.push(styles['scroll-hero--primary']);
 
@@ -60,11 +67,19 @@ const StackHero: React.FC<StackHeroProps> = ({
             style={{ height: height }}
         >
             <div className={styles['scroll-hero__content']}>
-                <header className={styles['scroll-hero__header']}>
+                <header
+                    className={styles['scroll-hero__header']}
+                    ref={headerReference}
+                >
                     <SectionHeadline element="h2">{headline}</SectionHeadline>
-                    <p>{subtext}</p>
+                    <p className={styles['scroll-hero__subtext']}>{subtext}</p>
                 </header>
-                <div className={styles['scroll-hero__slider-container']}>
+                <div
+                    className={styles['scroll-hero__slider-container']}
+                    style={{
+                        height: 'calc(100vh - ' + headerHeight + 'px)',
+                    }}
+                >
                     {card ? (
                         <FlippingCard translateOf={scrollPercentage}>
                             {children}

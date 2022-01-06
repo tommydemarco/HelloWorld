@@ -54,20 +54,22 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 />
                 <ScrollHero
                     sectionId="stack"
-                    headline="The stack"
-                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    headline={stackInfo[chosenLocale].title}
+                    subtext={stackInfo[chosenLocale].subtext}
                     height="650vh"
                 >
-                    {stackInfo.map((stackInfo: StackInfo) => {
-                        return (
-                            <StackCard
-                                key={stackInfo.title}
-                                title={stackInfo.title}
-                                description={stackInfo.description}
-                                icon={stackInfo.icon}
-                            />
-                        );
-                    })}
+                    {stackInfo[chosenLocale].stackList.map(
+                        (stackInfo: StackInfo) => {
+                            return (
+                                <StackCard
+                                    key={stackInfo.title}
+                                    title={stackInfo.title}
+                                    description={stackInfo.description}
+                                    icon={stackInfo.icon}
+                                />
+                            );
+                        },
+                    )}
                 </ScrollHero>
                 <ScrollHero
                     sectionId="work-experience"
