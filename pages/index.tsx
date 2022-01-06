@@ -109,26 +109,6 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     })}
                 </ScrollHero>
                 <ScrollHero
-                    sectionId="why-me"
-                    headline="Working with me"
-                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                    height="400vh"
-                    primary
-                >
-                    {educationInfo[chosenLocale].map((educationInfo: any) => {
-                        return (
-                            <EducationCard
-                                key={educationInfo.title}
-                                title={educationInfo.title}
-                                type={educationInfo.type}
-                                organization={educationInfo.organization}
-                                time={educationInfo.time}
-                                assetLink={educationInfo.assetLink}
-                            />
-                        );
-                    })}
-                </ScrollHero>
-                <ScrollHero
                     sectionId="contacts"
                     headline="Contacts"
                     subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"

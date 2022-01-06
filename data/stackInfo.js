@@ -38,19 +38,19 @@ export const stackInfo = {
             {
                 title: 'SEO for Frontend',
                 description:
-                    'I am very thoughtful of SEO-relevant aspects when developing, independently from which framework or Technology I am using. I am familiar with posssible SEO obstacles such as Cumulative Layout Shift, Largest Content Paint, and others. I always make sure in the Planning phase that the code that I am going to write takes also into consideration these important SEO parameters.',
+                    'I am very thoughtful of SEO-relevant aspects when developing, independently from which framework or Technology I am using. I am familiar with posssible SEO obstacles such as Cumulative Layout Shift, Largest Content Paint, Time to interactive and others. I always make sure in the Planning phase that the code that I am going to write takes also into consideration these important SEO parameters.',
                 icon: <Google />,
             },
             {
                 title: 'CSS & SCSS',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'When I did my vocational course as web developer, CSS was definitely one of the things I had the most fun with. I like to create compelling user experience in a performat way using CSS. During my work experience I also could improve my abilities and skills working on large codebases and making decisions that are semantically correct and contribute to better code quality, architecture and performance.',
                 icon: <CSS />,
             },
             {
                 title: 'Python',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Even though I am not using the Python language in my current position, I really like to experience with it, and in the HarvardX course I took recently (see education section) I could extend my knowledge of Python as a backend language with the Django Framework. I am also a Cetrified Associate in Python Programming, certificate issued by the Python Institute.',
                 icon: <Python />,
             },
         ],
