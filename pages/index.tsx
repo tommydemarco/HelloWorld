@@ -11,6 +11,7 @@ import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import FooterLink from '../components/FooterLink';
 import WorkCard from '../components/WorkCard';
+import ImageViewer from '../components/ImageViewer';
 
 // context
 import { AppContext, APP_ACTION_TYPES } from '../context';
@@ -179,6 +180,12 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     </FooterLink>
                 </Footer>
             </main>
+            {appState.imageOpen !== false && (
+                <ImageViewer
+                    imgSrc={appState.imageOpen.imgSrc}
+                    imgAlt={appState.imageOpen.imgAlt}
+                />
+            )}
         </>
     );
 };

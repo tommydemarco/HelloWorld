@@ -3,6 +3,12 @@ import React, { createContext, useReducer } from 'react';
 interface AppState {
     chosenLocale: null | 'en' | 'de';
     contactHighlight: boolean;
+    imageOpen: false | ImageOpen;
+}
+
+interface ImageOpen {
+    imgSrc: string;
+    imgAlt: string;
 }
 
 interface Action {
@@ -18,11 +24,13 @@ export interface AppContextValue {
 export const APP_ACTION_TYPES = {
     SET_CONTACT_HIGHLIGHT: 'SET_CONTACT_HIGHLIGHT',
     SET_CHOSEN_LOCALE: 'SET_LANGUAGE',
+    SET_IMAGE_OPEN: 'SET_IMAGE_OPEN',
 };
 
 const appInitialState: AppState = {
     chosenLocale: null,
     contactHighlight: false,
+    imageOpen: false,
 };
 
 const appReducer = (appState: AppState, action: Action): AppState => {
@@ -31,6 +39,8 @@ const appReducer = (appState: AppState, action: Action): AppState => {
             return { ...appState, contactHighlight: action.payload };
         case APP_ACTION_TYPES.SET_CHOSEN_LOCALE:
             return { ...appState, chosenLocale: action.payload };
+        case APP_ACTION_TYPES.SET_IMAGE_OPEN:
+            return { ...appState, imageOpen: action.payload };
         default:
             return appState;
     }

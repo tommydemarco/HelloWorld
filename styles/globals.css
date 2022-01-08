@@ -11,6 +11,7 @@
 html {
   --color-black: #282c2c;
   --color-dark-1: #2d3436;
+  --color-dark-1-backdrop: #2d3436dc;
   --color-dark-2: #3e464e;
   --color-headline-1: #e74c3c;
   --color-headline-2: #f1c40f;

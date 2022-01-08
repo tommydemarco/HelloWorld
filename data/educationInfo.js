@@ -11,7 +11,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/certifications/CS50.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -21,7 +21,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -31,7 +31,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -41,7 +41,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
         ],
     },
@@ -57,7 +57,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/certifications/CS50.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -67,7 +67,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -77,7 +77,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -87,7 +87,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: './portrait.jpg',
+                assetLink: '/portrait.jpg',
             },
         ],
     },

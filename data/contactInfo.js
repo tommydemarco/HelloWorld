@@ -5,7 +5,7 @@ export const contactInfo = {
         name: 'Tommaso De Marco',
         profession: 'Frontend Developer',
         location: 'Stuttgart, Germany',
-        phone: '0123456789',
+        phone: '+44 779170235',
         email: 'tommaso.demarco95@gmail.com',
         github: {
             text: 'github.com/tommydemarco',
@@ -21,8 +21,8 @@ export const contactInfo = {
         subtext: 'Ich freue mich darauf, von Ihnen zu hören!',
         name: 'Tommaso De Marco',
         profession: 'Frontend Entwickler',
-        location: 'Stuttgart, Germany',
-        phone: '0123456789',
+        location: 'Stuttgart, Deutschland',
+        phone: '+44 779170235',
         email: 'tommaso.demarco95@gmail.com',
         github: {
             text: 'github.com/tommydemarco',

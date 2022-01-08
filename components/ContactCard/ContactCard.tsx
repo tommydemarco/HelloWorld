@@ -60,10 +60,10 @@ const ContactCard: React.FC<ContactInfo> = ({
                     <StencilGradient />
                 </div>
                 <div className={styles['contact-card__contacts-container']}>
-                    <ContactLink text={phone} link={phone}>
+                    <ContactLink text={phone} link={'tel:' + phone.trim()}>
                         <PhonePortrait />
                     </ContactLink>
-                    <ContactLink text={email} link={email}>
+                    <ContactLink text={email} link={'mailto:' + email}>
                         <MailOpen />
                     </ContactLink>
                     <ContactLink text={github.text} link={github.link}>
