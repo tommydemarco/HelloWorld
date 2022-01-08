@@ -1,6 +1,6 @@
 export interface EducationInfo {
   title: string;
-  type: "certification" | "education";
+  type: string;
   organization: string;
   time: string;
   assetLink: string;

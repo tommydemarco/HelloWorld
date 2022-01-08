@@ -92,40 +92,44 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 </ScrollHero>
                 <ScrollHero
                     sectionId="work-experience"
-                    headline="Work experience"
-                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    headline={workInfo[chosenLocale].title}
+                    subtext={workInfo[chosenLocale].subtext}
                     height="400vh"
                     primary
                 >
-                    {workInfo.map((workInfo: WorkInfo) => {
-                        return (
-                            <WorkCard
-                                key={workInfo.title}
-                                title={workInfo.title}
-                                description={workInfo.description}
-                                timeRange={workInfo.timeRange}
-                            />
-                        );
-                    })}
+                    {workInfo[chosenLocale].workList.map(
+                        (workInfo: WorkInfo) => {
+                            return (
+                                <WorkCard
+                                    key={workInfo.title}
+                                    title={workInfo.title}
+                                    description={workInfo.description}
+                                    timeRange={workInfo.timeRange}
+                                />
+                            );
+                        },
+                    )}
                 </ScrollHero>
                 <ScrollHero
                     sectionId="education-info"
-                    headline="Education"
-                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    headline={educationInfo[chosenLocale].title}
+                    subtext={educationInfo[chosenLocale].subtext}
                     height="400vh"
                 >
-                    {educationInfo[chosenLocale].map((educationInfo: any) => {
-                        return (
-                            <EducationCard
-                                key={educationInfo.title}
-                                title={educationInfo.title}
-                                type={educationInfo.type}
-                                organization={educationInfo.organization}
-                                time={educationInfo.time}
-                                assetLink={educationInfo.assetLink}
-                            />
-                        );
-                    })}
+                    {educationInfo[chosenLocale].educationList.map(
+                        (educationInfo: EducationInfo) => {
+                            return (
+                                <EducationCard
+                                    key={educationInfo.title}
+                                    title={educationInfo.title}
+                                    type={educationInfo.type}
+                                    organization={educationInfo.organization}
+                                    time={educationInfo.time}
+                                    assetLink={educationInfo.assetLink}
+                                />
+                            );
+                        },
+                    )}
                 </ScrollHero>
                 <ScrollHero
                     sectionId="contacts"
