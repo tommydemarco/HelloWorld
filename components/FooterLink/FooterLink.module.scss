@@ -5,9 +5,12 @@
   text-decoration: none;
   outline: 0;
   border: 0;
+  background-color: transparent;
+  font-family: inherit;
   font-size: 19px;
   padding: 10px 5px;
   transition: all 0.2s ease;
+  cursor: pointer;
 
   &__text {
     transition: all 0.2s ease;

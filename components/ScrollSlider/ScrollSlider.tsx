@@ -19,7 +19,6 @@ const ScrollSlider: React.FC<ScrollSliderProps> = ({
         const elWidth = sliderRef.current.clientWidth;
         const visible = window.innerWidth * 0.8;
         const widthToScroll = elWidth - visible;
-        console.log(elWidth, visible);
         const translateInPx = (widthToScroll / 100) * translateOf;
         setTranslateValue(translateInPx);
     }, [translateOf]);

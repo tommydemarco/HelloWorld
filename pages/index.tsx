@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Head from 'next/head';
 
 // components
@@ -12,6 +12,12 @@ import Footer from '../components/Footer';
 import FooterLink from '../components/FooterLink';
 import WorkCard from '../components/WorkCard';
 
+// context
+import { AppContext, APP_ACTION_TYPES } from '../context';
+
+// utils
+import { scrollToElement } from '../utils/scrollToElement';
+
 // data
 import { contactInfo } from '../data/contactInfo';
 import { general } from '../data/general';
@@ -19,6 +25,7 @@ import { educationInfo } from '../data/educationInfo';
 import { startInfo } from '../data/startInfo';
 import { stackInfo } from '../data/stackInfo';
 import { workInfo } from '../data/workInfo';
+import { footerInfo } from '../data/footerInfo';
 
 // types
 import { GetStaticProps } from 'next';
@@ -31,7 +38,19 @@ interface HomePageProps {
 }
 
 const Home: React.FC<HomePageProps> = ({ locale }) => {
-    const [chosenLocale, setChosenLocale] = useState(locale);
+    const { appState, appDispatch } = useContext(AppContext)!;
+
+    const chosenLocale = appState.chosenLocale || locale;
+
+    const scrollToContacts = () => {
+        scrollToElement('#contacts #section-middle');
+        setTimeout(() => {
+            appDispatch({
+                type: APP_ACTION_TYPES.SET_CONTACT_HIGHLIGHT,
+                payload: true,
+            });
+        }, 300);
+    };
 
     return (
         <>
@@ -110,10 +129,11 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 </ScrollHero>
                 <ScrollHero
                     sectionId="contacts"
-                    headline="Contacts"
-                    subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    headline={contactInfo[chosenLocale].headline}
+                    subtext={contactInfo[chosenLocale].subtext}
                     height="330vh"
                     card
+                    primary
                 >
                     <ContactCard
                         name={contactInfo[chosenLocale].name}
@@ -126,21 +146,30 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     />
                 </ScrollHero>
                 <Footer
-                    textTitle="Bye, World!"
-                    textBody="Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!"
-                    endText="Coded with &#10084; using Next.js and other cool stuff"
+                    textTitle={footerInfo[chosenLocale].textTitle}
+                    textBody={footerInfo[chosenLocale].textBody}
+                    endText={footerInfo[chosenLocale].endText}
                 >
-                    <FooterLink element="link" href="#">
-                        Github
+                    <FooterLink
+                        element="link"
+                        href={footerInfo[chosenLocale].github.link}
+                    >
+                        {footerInfo[chosenLocale].github.text}
                     </FooterLink>
-                    <FooterLink element="link" href="#">
-                        Linkedin
+                    <FooterLink
+                        element="link"
+                        href={footerInfo[chosenLocale].linkedin.link}
+                    >
+                        {footerInfo[chosenLocale].linkedin.text}
                     </FooterLink>
-                    <FooterLink element="link" href="#">
-                        Contact me
+                    <FooterLink element="button" onClick={scrollToContacts}>
+                        {footerInfo[chosenLocale].contacts.text}
                     </FooterLink>
-                    <FooterLink element="link" href="#">
-                        Codewars
+                    <FooterLink
+                        element="link"
+                        href={footerInfo[chosenLocale].codewars.link}
+                    >
+                        {footerInfo[chosenLocale].codewars.text}
                     </FooterLink>
                 </Footer>
             </main>

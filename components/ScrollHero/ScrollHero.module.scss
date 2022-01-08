@@ -1,6 +1,7 @@
 .scroll-hero {
   display: block;
   background-color: var(--color-dark-2);
+  position: relative;
 
   &--primary {
     background-color: var(--color-dark-1);
@@ -36,5 +37,11 @@
     @media (max-width: 500px) {
       padding-bottom: 125px;
     }
+  }
+
+  &__section-middle {
+    position: absolute;
+    bottom: 100vh;
+    height: 0;
   }
 }

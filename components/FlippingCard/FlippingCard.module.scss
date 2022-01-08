@@ -4,6 +4,7 @@
     display: block;
     height: 100%;
     width: 100%;
+    transition: all 0.3s ease;
 
     &__content {
         width: 100%;
@@ -16,5 +17,38 @@
     ,var(--color-headline-1),var(--color-headline-2));
     padding: 5px;
     border-radius: 10px;
+    }
+
+    &--highlight {
+        transform: scale(1.15)
+    }
+
+    &__close-highlight {
+        position: absolute;
+        z-index: -1;
+        top: 50px;
+        transition: top 0.4s ease, transform 0.3s ease;
+        display: block;
+        height: 60px;
+        width: 60px;
+        right: 10px;
+        opacity: 0;
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        svg {
+            color: var(--color-white);
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &--highlight &__close-highlight {
+        top: -70px;
+        opacity: 1;
     }
 }

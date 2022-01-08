@@ -2,9 +2,15 @@
     display: flex;
     margin-right: 30px;
     flex-direction: column;
-    padding: 0 20px;
     position: relative;
     overflow: visible;
+    max-height: 100%;
+
+    &__container {
+      position: relative;
+      max-height: calc(100% - 30px);
+      padding-bottom: 20px;
+    }
 
     &__title {
         background-clip: text;

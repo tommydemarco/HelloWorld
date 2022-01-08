@@ -1,5 +1,4 @@
 .stack-card {
-  padding: 20px;
   background-color: var(--color-grey-light);
   border-radius: 10px;
   position: relative;
@@ -18,6 +17,10 @@
     flex-direction: column;
     z-index: 9;
     position: relative;
+  }
+
+  &__description {
+    padding-bottom: 20px;
   }
 
   &__card-title {

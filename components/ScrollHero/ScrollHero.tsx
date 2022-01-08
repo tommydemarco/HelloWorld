@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 
 import SectionHeadline from '../SectionHeadline';
 import StackSlider from '../ScrollSlider';
@@ -91,6 +91,10 @@ const StackHero: React.FC<StackHeroProps> = ({
                     )}
                 </div>
             </div>
+            <div
+                id="section-middle"
+                className={styles['scroll-hero__section-middle']}
+            ></div>
         </section>
     );
 };

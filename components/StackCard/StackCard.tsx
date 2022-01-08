@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import Image from 'next/image';
+import ScrollableContent from '../ScrollableContent';
 
 import styles from './StackCard.module.scss';
 
@@ -23,30 +23,30 @@ const StackCard: React.FC<StackInfo> = ({ title, description, icon }) => {
             ref={cardRef}
             className={styles['stack-card']}
         >
-            {/* <div className={styles['stack-card__img-container']}>
-                <Image src={imageSrc} alt={imageAlt} height="300" width="300" />
-            </div> */}
-            <div className={styles['stack-card__container']}>
-                <header className={styles['stack-card__header']}>
+            <ScrollableContent>
+                <div className={styles['stack-card__container']}>
+                    <header className={styles['stack-card__header']}>
+                        <div
+                            className={
+                                styles['stack-card__card-title'] + ' card-title'
+                            }
+                        >
+                            <i className={styles['stack-card__title-icon']}>
+                                {icon}
+                            </i>
+                            <span>{title}</span>
+                        </div>
+                    </header>
                     <div
                         className={
-                            styles['stack-card__card-title'] + ' card-title'
+                            styles['stack-card__description'] +
+                            ' card-description'
                         }
                     >
-                        <i className={styles['stack-card__title-icon']}>
-                            {icon}
-                        </i>
-                        <span>{title}</span>
+                        {description}
                     </div>
-                </header>
-                <div
-                    className={
-                        styles['stack-card__description'] + ' card-description'
-                    }
-                >
-                    {description}
                 </div>
-            </div>
+            </ScrollableContent>
             <div className={styles['stack-card__icon-background']}>{icon}</div>
         </article>
     );

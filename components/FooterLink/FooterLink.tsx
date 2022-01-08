@@ -32,7 +32,9 @@ const FooterLink: React.FC<FooterLinkProps> = ({
     else
         return (
             <button className={styles['footer-link']} onClick={onClick}>
-                {/* <i className={styles['footer-link__icon']}>{arrow}</i> */}
+                <i className={styles['footer-link__icon']}>
+                    <Arrow />
+                </i>
                 <span className={styles['footer-link__text']}>{children}</span>
             </button>
         );
