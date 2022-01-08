@@ -1,7 +1,7 @@
-import { useState, useRef } from 'react';
-
 import Ribbon from '../../assets/svgs/ribbon.svg';
 import DocumentText from '../../assets/svgs/document-text.svg';
+import ScrollableContent from '../ScrollableContent';
+import Button from '../Button';
 
 import styles from './EducationCard.module.scss';
 
@@ -11,20 +11,43 @@ const EducationCard: React.FC<EducationInfo> = ({
     title,
     type,
     time,
+    organization,
+    buttonText,
     assetLink,
+    description,
 }) => {
-    const cardRef = useRef<HTMLDivElement>(null);
-    const [cardWidth, setCardWidth] = useState(340);
+    const viewCertificate = () => {};
 
     return (
-        <article
-            style={{ minWidth: cardWidth + 'px' }}
-            ref={cardRef}
-            className={styles['education-card']}
-        >
-            <div className={styles['education-card__title'] + ' card-title'}>
-                {title}
-            </div>
+        <article className={styles['education-card']}>
+            <ScrollableContent>
+                <div className={styles['education-card__content']}>
+                    <div
+                        className={
+                            styles['education-card__title'] + ' card-title'
+                        }
+                    >
+                        {title}
+                    </div>
+                    <div className={styles['education-card__organization']}>
+                        {organization}
+                    </div>
+                    <div className={styles['education-card__time']}>{time}</div>
+                    <div
+                        className={
+                            styles['education-card__description'] +
+                            ' card-description'
+                        }
+                    >
+                        {description}
+                    </div>
+                    <div className={styles['education-card__button-container']}>
+                        <Button secondary onClick={viewCertificate}>
+                            {buttonText}
+                        </Button>
+                    </div>
+                </div>
+            </ScrollableContent>
             <div className={styles['education-card__icon-background']}>
                 {type === 'certification' ? <Ribbon /> : <DocumentText />}
             </div>

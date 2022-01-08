@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef } from 'react';
 import ScrollableContent from '../ScrollableContent';
 
 import styles from './StackCard.module.scss';
@@ -6,23 +5,8 @@ import styles from './StackCard.module.scss';
 import { StackInfo } from '../../data/stackInfo.types';
 
 const StackCard: React.FC<StackInfo> = ({ title, description, icon }) => {
-    const cardRef = useRef<HTMLDivElement>(null);
-    const [cardWidth, setCardWidth] = useState(300);
-
-    useEffect(() => {
-        // if (cardRef.current === null) return;
-        // const cardScrollHeight = cardRef.current.scrollHeight;
-        // const cardHeight = cardRef.current.clientHeight;
-        // if (cardScrollHeight <= cardHeight) return;
-        // setCardWidth((previousWidth) => previousWidth + 5);
-    }, [cardWidth]);
-
     return (
-        <article
-            style={{ minWidth: cardWidth + 'px' }}
-            ref={cardRef}
-            className={styles['stack-card']}
-        >
+        <article className={styles['stack-card']}>
             <ScrollableContent>
                 <div className={styles['stack-card__container']}>
                     <header className={styles['stack-card__header']}>

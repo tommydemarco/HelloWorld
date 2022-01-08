@@ -125,6 +125,8 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                                     type={educationInfo.type}
                                     organization={educationInfo.organization}
                                     time={educationInfo.time}
+                                    description={educationInfo.description}
+                                    buttonText={educationInfo.buttonText}
                                     assetLink={educationInfo.assetLink}
                                 />
                             );

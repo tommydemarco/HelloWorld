@@ -3,5 +3,7 @@ export interface EducationInfo {
   type: string;
   organization: string;
   time: string;
+  buttonText: string;
+  description: string;
   assetLink: string;
 }

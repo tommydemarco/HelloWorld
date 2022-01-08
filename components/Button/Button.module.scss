@@ -14,4 +14,11 @@
   &:hover {
     transform: scale(1.05);
   }
+
+  &--secondary {
+    background: transparent;
+    color: var(--color-dark-1);
+    border: 2px solid var(--color-dark-1);
+    font-size: 17px;
+  }
 }

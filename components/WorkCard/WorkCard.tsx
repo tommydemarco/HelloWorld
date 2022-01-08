@@ -1,4 +1,3 @@
-import { useState, useRef } from 'react';
 import ScrollableContent from '../ScrollableContent';
 
 import styles from './WorkCard.module.scss';
@@ -6,15 +5,8 @@ import styles from './WorkCard.module.scss';
 import { WorkInfo } from '../../data/workInfo.types';
 
 const WorkCard: React.FC<WorkInfo> = ({ title, timeRange, description }) => {
-    const cardRef = useRef<HTMLDivElement>(null);
-    const [cardWidth, setCardWidth] = useState(340);
-
     return (
-        <article
-            style={{ minWidth: cardWidth + 'px' }}
-            ref={cardRef}
-            className={styles['work-card']}
-        >
+        <article className={styles['work-card']}>
             <div className={styles['work-card__container']}>
                 <ScrollableContent dark noGutterTop>
                     <div className={styles['work-card__title'] + ' card-title'}>
