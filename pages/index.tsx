@@ -123,6 +123,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                                 <WorkCard
                                     key={workInfo.title}
                                     title={workInfo.title}
+                                    company={workInfo.company}
                                     description={workInfo.description}
                                     timeRange={workInfo.timeRange}
                                 />

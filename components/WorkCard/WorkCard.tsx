@@ -4,7 +4,12 @@ import styles from './WorkCard.module.scss';
 
 import { WorkInfo } from '../../data/workInfo.types';
 
-const WorkCard: React.FC<WorkInfo> = ({ title, timeRange, description }) => {
+const WorkCard: React.FC<WorkInfo> = ({
+    title,
+    timeRange,
+    description,
+    company,
+}) => {
     return (
         <article className={styles['work-card']}>
             <div className={styles['work-card__container']}>
@@ -14,6 +19,9 @@ const WorkCard: React.FC<WorkInfo> = ({ title, timeRange, description }) => {
                     </div>
                     <div className={styles['work-card__time-range']}>
                         {timeRange}
+                    </div>
+                    <div className={styles['work-card__company']}>
+                        {company}
                     </div>
                     <div
                         className={
