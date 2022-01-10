@@ -46,8 +46,8 @@ export const educationInfo = {
         ],
     },
     de: {
-        title: 'Education',
-        subtext: 'My education path & certifications',
+        title: 'Ausbildung',
+        subtext: 'Meine Ausbildung und Zertifizierungen',
         educationList: [
             {
                 title: 'Web Programming with python and Javascript',

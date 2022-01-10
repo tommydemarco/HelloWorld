@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
+import React from '../../assets/svgs/logo-react.svg';
 
 import Close from '../../assets/svgs/close-outline.svg';
 
@@ -48,6 +49,9 @@ const ImageViewer: React.FC<ImageViewerProps> = ({ imgSrc, imgAlt }) => {
                     height="500"
                     layout="fixed"
                 />
+            </div>
+            <div className={styles['image-viewer__loading']}>
+                <React />
             </div>
         </div>
     );

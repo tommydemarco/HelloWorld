@@ -1,9 +1,9 @@
 .section-headline {
   font-family: 'Georama', sans-serif;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 10px;
-  font-size: 70px;
+  font-size: 67px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -12,15 +12,15 @@
     ,var(--color-headline-1),var(--color-headline-2));
 
   @media (max-width: 600px) {
-    font-size: 45px;
+    font-size: 41px;
   }
 
   &--main {
-    font-size: 80px;
+    font-size: 75px;
   }
 
   &--tertiary {
-    font-size: 40px;
+    font-size: 37px;
 
     @media (max-width: 600px) {
       font-size: 36px;

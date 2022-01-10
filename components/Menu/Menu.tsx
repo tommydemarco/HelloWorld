@@ -1,10 +1,24 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+
+// context
+import { AppContext, APP_ACTION_TYPES } from '../../context';
 
 import { scrollToElement } from '../../utils/scrollToElement';
 
 import styles from './Menu.module.scss';
 
-const Menu = () => {
+interface MenuProps {
+    links: MenuLink[];
+}
+
+interface MenuLink {
+    linkText: string;
+    sectionId: string;
+}
+
+const Menu: React.FC<MenuProps> = ({ links }) => {
+    const { appDispatch } = useContext(AppContext)!;
+
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const buttonClasses = [styles['menu__button']];
@@ -32,49 +46,44 @@ const Menu = () => {
             <div className={styles['menu__background']}></div>
             <nav className={styles['menu__nav']} aria-hidden={!isOpen}>
                 <ul className={styles['menu__list']}>
-                    <li className={styles['menu__item']}>
-                        <button
-                            onClick={() => goToSection('#stack')}
-                            className={styles['menu__link']}
-                        >
-                            Presentation
-                        </button>
-                    </li>
-                    <li className={styles['menu__item']}>
-                        <button
-                            onClick={() => goToSection('#stack')}
-                            className={styles['menu__link']}
-                        >
-                            About us
-                        </button>
-                    </li>
-                    <li className={styles['menu__item']}>
-                        <button
-                            onClick={() => goToSection('#stack')}
-                            className={styles['menu__link']}
-                        >
-                            About us
-                        </button>
-                    </li>
-                    <li className={styles['menu__item']}>
-                        <button
-                            onClick={() => goToSection('#stack')}
-                            className={styles['menu__link']}
-                        >
-                            About us
-                        </button>
-                    </li>
+                    {links.map((link: MenuLink) => {
+                        return (
+                            <li
+                                key={link.linkText}
+                                className={styles['menu__item']}
+                            >
+                                <button
+                                    onClick={() =>
+                                        goToSection('#' + link.sectionId)
+                                    }
+                                    className={styles['menu__link']}
+                                >
+                                    {link.linkText}
+                                </button>
+                            </li>
+                        );
+                    })}
                 </ul>
             </nav>
             <div className={styles['menu__language-change']}>
                 <button
                     className={styles['menu__language-item']}
-                    onClick={() => {}}
+                    onClick={() => {
+                        appDispatch({
+                            type: APP_ACTION_TYPES.SET_CHOSEN_LOCALE,
+                            payload: 'en',
+                        });
+                    }}
                 >
                     EN
                 </button>
                 <button
-                    onClick={() => {}}
+                    onClick={() => {
+                        appDispatch({
+                            type: APP_ACTION_TYPES.SET_CHOSEN_LOCALE,
+                            payload: 'de',
+                        });
+                    }}
                     className={styles['menu__language-item']}
                 >
                     DE

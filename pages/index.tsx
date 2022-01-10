@@ -63,7 +63,26 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Menu />
+            <Menu
+                links={[
+                    {
+                        linkText: stackInfo[chosenLocale].title,
+                        sectionId: 'stack',
+                    },
+                    {
+                        linkText: workInfo[chosenLocale].title,
+                        sectionId: 'work',
+                    },
+                    {
+                        linkText: educationInfo[chosenLocale].title,
+                        sectionId: 'education',
+                    },
+                    {
+                        linkText: contactInfo[chosenLocale].headline,
+                        sectionId: 'contacts',
+                    },
+                ]}
+            />
             <main>
                 <StartHero
                     headline={startInfo[chosenLocale].helloWorld}
@@ -92,7 +111,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     )}
                 </ScrollHero>
                 <ScrollHero
-                    sectionId="work-experience"
+                    sectionId="work"
                     headline={workInfo[chosenLocale].title}
                     subtext={workInfo[chosenLocale].subtext}
                     height="400vh"
@@ -112,7 +131,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     )}
                 </ScrollHero>
                 <ScrollHero
-                    sectionId="education-info"
+                    sectionId="education"
                     headline={educationInfo[chosenLocale].title}
                     subtext={educationInfo[chosenLocale].subtext}
                     height="400vh"

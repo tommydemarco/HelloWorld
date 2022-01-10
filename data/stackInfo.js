@@ -14,7 +14,7 @@ export const stackInfo = {
             {
                 title: 'Stencil',
                 description:
-                    'I worked a whole lot with Stencil in the last year, building a design system for a large web infrastructure. I enjoy working with web components, and I find the Stencil syntax particularly interesting. Working with this technology has allowed me to gain experience in working with a large codebase and make delicate decisions that could potentially affect other parts of the infrastructure.',
+                    'I worked a whole lot with Stencil in the past year, building a design system for a large web infrastructure. I enjoy working with web components, and I find the Stencil syntax particularly interesting. Working with this technology has allowed me to gain experience in working with a large codebase and make delicate decisions that could potentially affect other parts of the infrastructure.',
                 icon: <Stencil />,
             },
             {
@@ -38,13 +38,13 @@ export const stackInfo = {
             {
                 title: 'SEO for Frontend',
                 description:
-                    'I am very thoughtful of SEO-relevant aspects when developing, independently from which framework or Technology I am using. I am familiar with posssible SEO obstacles such as Cumulative Layout Shift, Largest Content Paint, Time to interactive and others. I always make sure in the Planning phase that the code that I am going to write takes also into consideration these important SEO parameters.',
+                    'I am very thoughtful of SEO-relevant aspects when developing, independently from which framework or Technology I am using. I am familiar with posssible SEO obstacles such as Cumulative Layout Shift, Cumulative Layout Shift, Largest Contentful Paint, Speed Index and more. I always make sure in the Planning phase that the code that I am going to write takes also into consideration these important SEO parameters.',
                 icon: <Google />,
             },
             {
                 title: 'CSS & SCSS',
                 description:
-                    'When I did my vocational course as web developer, CSS was definitely one of the things I had the most fun with. I like to create compelling user experience in a performat way using CSS. During my work experience I also could improve my abilities and skills working on large codebases and making decisions that are semantically correct and contribute to better code quality, architecture and performance.',
+                    'Während meiner Ausbildung zum Webentwickler war CSS definitiv eines der Dinge, die mir am meisten Spaß gemacht haben. Während meiner Berufserfahrung konnte ich auch meine Fähigkeiten verbessern, an großen Codebasen zu arbeiten und semantisch korrekte Entscheidungen zu treffen, die zu einer besseren Codequalität, Architektur und Leistung beitragen.',
                 icon: <CSS />,
             },
             {
@@ -56,43 +56,49 @@ export const stackInfo = {
         ],
     },
     de: {
-        title: 'My Stack',
-        subtext: 'The technologies that I enjoy the most working with',
+        title: 'Mein Stack',
+        subtext: 'Die Technologien, mit denen ich am meisten Erfahrung habe',
         stackList: [
             {
                 title: 'Stencil',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Ich habe im letzten Jahr viel mit Stencil gearbeitet, um ein Designsystem für eine große Webinfrastruktur aufzubauen. Ich arbeite gerne mit Webkomponenten und finde die Stencil-Syntax sehr interessant. Die Arbeit mit dieser Technologie hat es mir ermöglicht, Erfahrungen mit heikle Entscheidungen zu machen, die sich auch auf andere Teile der Infrastruktur auswirken könnten.',
                 icon: <Stencil />,
             },
             {
                 title: 'Vue',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Vue war das erste Frontend-Framework, mit dem ich gearbeitet habe, und obwohl ich aufgrund von Stack-Entscheidungen meines jetzigen Arbeitgebers nicht mehr viel damit zu tun habe, experimentiere ich immer noch oft mit Vue: ich finde es ist eine wirklich gültige Lösung mit vielen verschiedenen Vorteilen, wie einer wohl einfacheren State-Management-Architektur.',
                 icon: <Vue />,
             },
             {
                 title: 'React',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Mein Lieblings-Frontend-Framework/Library, nicht nur weil ich ein paar Dollar in Meta investiert habe. Ich habe an mehreren großen Projekten mit React gearbeitet, ich liebe JSX und sein deklarativeres Programmierparadigma. Ich arbeite besonders gerne mit Frameworks, die auf React basieren: Next.js und Gatsby, die meiner Meinung nach wirklich eine produktionsbereite Umgebung liefern.',
                 icon: <React />,
             },
             {
                 title: 'Vanilla JS',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Während die Arbeit mit React einen eher deklarativen Ansatz beinhaltet, ermöglichte mir die Arbeit mit Stencil auch, in einem Imperative-Paradigma zu arbeiten, das hauptsächlich Klassen und Vanilla-JavaScript verwendet, um die Kernlogik aufzubauen. Ich habe auch Erfahrung mit der Arbeit an in jQuery geschriebenem Legacy-Code, obwohl ich nicht sagen würde, dass dies meine erste Stack-Wahl ist.',
                 icon: <JavaScript />,
             },
             {
-                title: 'CSS',
+                title: 'SEO for Frontend',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Ich achte bei der Entwicklung sehr auf SEO-relevante Aspekte, unabhängig davon, welches Framework oder welche Technologie ich verwende. Ich kenne mögliche SEO-Hindernisse wie Cumulative Layout Shift, Largest Contentful Paint, Speed Index und mehr. Ich achte in der Planungsphase immer darauf, dass der Code, den ich schreibe, auch diese wichtigen SEO-Parameter berücksichtigt.',
+                icon: <Google />,
+            },
+            {
+                title: 'CSS & SCSS',
+                description:
+                    'Während meiner Ausbildung zum Webentwickler war CSS definitiv eines der Dinge, die mir am meisten Spaß gemacht haben. Während meiner Berufserfahrung konnte ich auch meine Fähigkeiten verbessern, an großen Codebasen zu arbeiten und semantisch korrekte Entscheidungen zu treffen, die zu einer besseren Codequalität, Architektur und Leistung beitragen.',
                 icon: <CSS />,
             },
             {
                 title: 'Python',
                 description:
-                    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt',
+                    'Auch wenn ich Python in meiner jetzigen Position nicht nutze, mache ich gerne Erfahrungen damit, und in dem HarvardX-Kurs, den ich kürzlich bestanden habe (siehe Ausbildung-Abschnitt) konnte ich meine Kenntnisse über Python als Backend-Sprache mit dem Django Framework erweitern. Ich bin auch ein Certified Associate in Python Programming, ein Zertifikat vom Python Institute.',
                 icon: <Python />,
             },
         ],
