@@ -9,7 +9,7 @@ import Google from '../assets/svgs/logo-google.svg';
 export const stackInfo = {
     en: {
         title: 'My Stack',
-        subtext: 'The technologies that I enjoy the most working with',
+        subtext: 'The technologies I have the most experience working with',
         stackList: [
             {
                 title: 'Stencil',

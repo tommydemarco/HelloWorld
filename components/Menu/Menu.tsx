@@ -17,7 +17,7 @@ interface MenuLink {
 }
 
 const Menu: React.FC<MenuProps> = ({ links }) => {
-    const { appDispatch } = useContext(AppContext)!;
+    const { appState, appDispatch } = useContext(AppContext)!;
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -75,7 +75,17 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                         });
                     }}
                 >
-                    EN
+                    <span
+                        style={
+                            appState.chosenLocale === 'en'
+                                ? {
+                                      borderBottom: '3px solid white',
+                                  }
+                                : undefined
+                        }
+                    >
+                        EN
+                    </span>
                 </button>
                 <button
                     onClick={() => {
@@ -86,7 +96,17 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                     }}
                     className={styles['menu__language-item']}
                 >
-                    DE
+                    <span
+                        style={
+                            appState.chosenLocale === 'de'
+                                ? {
+                                      borderBottom: '3px solid white',
+                                  }
+                                : undefined
+                        }
+                    >
+                        DE
+                    </span>
                 </button>
             </div>
         </div>
