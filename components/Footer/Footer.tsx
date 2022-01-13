@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({
         <footer className={styles['footer']}>
             <div className={styles['footer__container']}>
                 <div className={styles['footer__text']}>
-                    <SectionHeadline element="h6" tertiary>
+                    <SectionHeadline element="div" tertiary>
                         {textTitle}
                     </SectionHeadline>
                     <p>{textBody}</p>

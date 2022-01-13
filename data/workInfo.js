@@ -66,7 +66,7 @@ export const workInfo = {
                     'Verantwortung für die Kabine, Führung eines Teams von Cabin Crew in einem multikulturellen Umfeld, Verantwortung für Kundenzufriedenheit, Sicherheit und Wohlbefinden zu jeder Zeit, wo Entscheidungen oft unter Druck getroffen werden müssen. Mit Sitz in Teneriffa, Spanien.',
             },
             {
-                title: 'Canin Crew',
+                title: 'Cabin Crew',
                 timeRange: 'Januar 2016 - März 2017',
                 company: 'Ryanair',
                 description:

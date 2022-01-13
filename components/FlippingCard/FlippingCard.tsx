@@ -52,6 +52,7 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
                             payload: false,
                         })
                     }
+                    name="close"
                 >
                     <Close />
                 </button>

@@ -57,6 +57,7 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                                         goToSection('#' + link.sectionId)
                                     }
                                     className={styles['menu__link']}
+                                    aria-hidden={!isOpen}
                                 >
                                     {link.linkText}
                                 </button>
@@ -74,6 +75,7 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                             payload: 'en',
                         });
                     }}
+                    aria-hidden={!isOpen}
                 >
                     <span
                         style={
@@ -95,6 +97,7 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                         });
                     }}
                     className={styles['menu__language-item']}
+                    aria-hidden={!isOpen}
                 >
                     <span
                         style={

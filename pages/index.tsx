@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import Head from 'next/head';
 
 // components
@@ -52,6 +52,13 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
             });
         }, 300);
     };
+
+    useEffect(() => {
+        appDispatch({
+            type: APP_ACTION_TYPES.SET_CHOSEN_LOCALE,
+            payload: chosenLocale,
+        });
+    }, []);
 
     return (
         <>
