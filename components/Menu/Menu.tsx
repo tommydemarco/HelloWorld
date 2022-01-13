@@ -44,7 +44,7 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
                 <span className={styles['menu__burger-menu']}></span>
             </button>
             <div className={styles['menu__background']}></div>
-            <nav className={styles['menu__nav']} aria-hidden={!isOpen}>
+            <nav className={styles['menu__nav']}>
                 <ul className={styles['menu__list']}>
                     {links.map((link: MenuLink) => {
                         return (
