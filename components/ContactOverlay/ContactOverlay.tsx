@@ -11,17 +11,16 @@ const ContactOverlay = () => {
     const { appState } = useContext(AppContext)!;
 
     const classes = [styles['contact-overlay']];
-    if (appState.contactHighlight)
-        classes.push(styles['contact-overlay--active']);
+    if (appState.blockScreen) classes.push(styles['contact-overlay--active']);
 
     useEffect(() => {
         if (element.current === null) return;
-        if (appState.contactHighlight === false) {
+        if (appState.blockScreen === false) {
             enableBodyScroll(element.current);
         } else {
             disableBodyScroll(element.current);
         }
-    }, [appState.contactHighlight]);
+    }, [appState.blockScreen]);
 
     return <div ref={element} className={classes.join(' ')}></div>;
 };

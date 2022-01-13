@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from 'react';
 
 interface AppState {
     chosenLocale: null | 'en' | 'de';
-    contactHighlight: boolean;
+    blockScreen: boolean;
     imageOpen: false | ImageOpen;
 }
 
@@ -22,21 +22,21 @@ export interface AppContextValue {
 }
 
 export const APP_ACTION_TYPES = {
-    SET_CONTACT_HIGHLIGHT: 'SET_CONTACT_HIGHLIGHT',
+    SET_BLOCK_SCREEN: 'SET_BLOCK_SCREEN',
     SET_CHOSEN_LOCALE: 'SET_LANGUAGE',
     SET_IMAGE_OPEN: 'SET_IMAGE_OPEN',
 };
 
 const appInitialState: AppState = {
     chosenLocale: null,
-    contactHighlight: false,
+    blockScreen: false,
     imageOpen: false,
 };
 
 const appReducer = (appState: AppState, action: Action): AppState => {
     switch (action.type) {
-        case APP_ACTION_TYPES.SET_CONTACT_HIGHLIGHT:
-            return { ...appState, contactHighlight: action.payload };
+        case APP_ACTION_TYPES.SET_BLOCK_SCREEN:
+            return { ...appState, blockScreen: action.payload };
         case APP_ACTION_TYPES.SET_CHOSEN_LOCALE:
             return { ...appState, chosenLocale: action.payload };
         case APP_ACTION_TYPES.SET_IMAGE_OPEN:

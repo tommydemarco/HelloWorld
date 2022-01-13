@@ -22,20 +22,19 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
     const rotationDegree = translateOf * 1.8;
 
     const classes = [styles['flipping-card']];
-    if (appState.contactHighlight)
-        classes.push(styles['flipping-card--highlight']);
+    if (appState.blockScreen) classes.push(styles['flipping-card--highlight']);
 
     useEffect(() => {
-        if (appState.contactHighlight === false) {
+        if (appState.blockScreen === false) {
             document.body.scrollTop = 100;
         }
-    }, [appState.contactHighlight]);
+    }, [appState.blockScreen]);
 
     return (
         <>
             <ContactOverlay />
             <div className={classes.join(' ')}>
-                {appState.contactHighlight && (
+                {appState.blockScreen && (
                     <style>
                         {`
                             body {

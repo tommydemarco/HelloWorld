@@ -33,6 +33,7 @@ import { GetStaticProps } from 'next';
 import { EducationInfo } from '../data/educationInfo.types';
 import { StackInfo } from '../data/stackInfo.types';
 import { WorkInfo } from '../data/workInfo.types';
+import DevToolsChecker from '../components/DevToolsChecker/DevToolsChecker';
 
 interface HomePageProps {
     locale: 'en' | 'de';
@@ -47,7 +48,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
         scrollToElement('#contacts #section-middle');
         setTimeout(() => {
             appDispatch({
-                type: APP_ACTION_TYPES.SET_CONTACT_HIGHLIGHT,
+                type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
                 payload: true,
             });
         }, 300);
@@ -213,6 +214,10 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     imgAlt={appState.imageOpen.imgAlt}
                 />
             )}
+            <DevToolsChecker
+                title={footerInfo[chosenLocale].codewars.text}
+                text={footerInfo[chosenLocale].codewars.text}
+            />
         </>
     );
 };
