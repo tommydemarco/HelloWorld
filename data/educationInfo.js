@@ -31,7 +31,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: '/portrait.jpg',
+                assetLink: '/portrait-min.jpg',
             },
             {
                 title: 'Web Design and Development Vocational Training',
@@ -67,7 +67,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: '/portrait.jpg',
+                assetLink: '/portrait-min.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -77,7 +77,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: '/portrait.jpg',
+                assetLink: '/portrait-min.jpg',
             },
             {
                 title: 'Web Programming with python and Javascript',
@@ -87,7 +87,7 @@ export const educationInfo = {
                 description:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 buttonText: 'View certificate',
-                assetLink: '/portrait.jpg',
+                assetLink: '/portrait-min.jpg',
             },
         ],
     },
