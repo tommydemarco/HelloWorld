@@ -52,7 +52,7 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
                             payload: false,
                         })
                     }
-                    name="close"
+                    aria-label="close"
                 >
                     <Close />
                 </button>
