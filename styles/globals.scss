@@ -39,16 +39,42 @@ p {
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
+
+  @media (min-height: 600px) {
+    font-size: 24px;
+  }
+
+  @media (min-height: 890px) {
+    font-size: 26px;
+  }
 }
 
 .card-description {
-  font-size: 17px;
-}
+  font-size: 15px;
 
-@media (min-width: 900px) and (max-width: 1300px) {
-  .card-description {
-    font-size: 15px;
+  @media (min-height: 600px) {
+    font-size: 16px;
+  }
+
+  @media (min-height: 700px) {
+    font-size: 17px;
+  }
+
+  @media (min-height: 760px) {
+    font-size: 19px;
+  }
+
+  @media (min-height: 800px) {
+    font-size: 20px;
+  }
+
+  @media (min-height: 890px) {
+    font-size: 22px;
+  }
+
+  @media (min-height: 920px) {
+    font-size: 23px;
   }
 }

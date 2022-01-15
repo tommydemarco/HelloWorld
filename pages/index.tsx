@@ -27,6 +27,7 @@ import { startInfo } from '../data/startInfo';
 import { stackInfo } from '../data/stackInfo';
 import { workInfo } from '../data/workInfo';
 import { footerInfo } from '../data/footerInfo';
+import { devCheckerInfo } from '../data/devCheckerInfo';
 
 // types
 import { GetStaticProps } from 'next';
@@ -215,8 +216,8 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 />
             )}
             <DevToolsChecker
-                title={footerInfo[chosenLocale].codewars.text}
-                text={footerInfo[chosenLocale].codewars.text}
+                title={devCheckerInfo[chosenLocale].title}
+                text={devCheckerInfo[chosenLocale].text}
             />
         </>
     );

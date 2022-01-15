@@ -63,7 +63,7 @@ const DevToolsChecker: React.FC<DevToolsChecker> = ({ title, text }) => {
                         {title}
                     </span>
                 </div>
-                <p className={styles['dev-tools-checker__body-text']}>{text}</p>
+                <p className={styles['dev-tools-checker__text']}>{text}</p>
             </div>
         </div>
     );
