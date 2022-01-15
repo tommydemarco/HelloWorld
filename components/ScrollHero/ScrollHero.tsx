@@ -52,8 +52,18 @@ const StackHero: React.FC<StackHeroProps> = ({
     }, [stackHeroRef]);
 
     useEffect(() => {
-        if (headerReference.current === null) return;
-        setHeaderHeight(headerReference.current.clientHeight + 3);
+        const setScrollContainerHeight = () => {
+            if (headerReference.current === null) return;
+            setHeaderHeight(headerReference.current.clientHeight + 3);
+        };
+        // fixes Safari bug
+        setTimeout(() => {
+            setScrollContainerHeight();
+        }, 1000);
+        window.addEventListener('resize', setScrollContainerHeight);
+        return () => {
+            window.removeEventListener('resize', setScrollContainerHeight);
+        };
     }, [headerReference]);
 
     const classes = [styles['scroll-hero']];
