@@ -35,7 +35,9 @@ const StartHero: React.FC<StartHeroProps> = (props) => {
                     <SectionHeadline element="div" main>
                         {props.headline}
                     </SectionHeadline>
-                    <p>{props.subtext}</p>
+                    <p className={styles['start-hero__text']}>
+                        {props.subtext}
+                    </p>
                     <div className={styles['start-hero__button-container']}>
                         <Button onClick={scrollToStack}>
                             {props.buttonText}

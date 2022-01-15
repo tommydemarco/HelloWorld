@@ -5,6 +5,7 @@
     height: 100%;
     width: 100%;
     transition: all 0.3s ease;
+    z-index: -1;
 
     &__content {
         width: 100%;
@@ -20,7 +21,8 @@
     }
 
     &--highlight {
-        transform: scale(1.15)
+        transform: scale(1.15);
+        z-index:1;
     }
 
     &__close-highlight {

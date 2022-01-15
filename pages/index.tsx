@@ -2,6 +2,7 @@ import { useState, useContext, useEffect } from 'react';
 import Head from 'next/head';
 
 // components
+import BlockScreenOverlay from '../components/BlockScreenOverlay';
 import ContactCard from '../components/ContactCard';
 import EducationCard from '../components/EducationCard';
 import ScrollHero from '../components/ScrollHero';
@@ -49,7 +50,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
         scrollToElement('#contacts #section-middle');
         setTimeout(() => {
             appDispatch({
-                type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
+                type: APP_ACTION_TYPES.SET_CONTACT_ACTIVE,
                 payload: true,
             });
         }, 300);

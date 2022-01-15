@@ -1,17 +1,18 @@
 import { useContext, useEffect, useRef } from 'react';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
-import styles from './ContactOverlay.module.scss';
+import styles from './BlockScreenOverlay.module.scss';
 
 // context
-import { AppContext, APP_ACTION_TYPES } from '../../context';
+import { AppContext } from '../../context';
 
-const ContactOverlay = () => {
+const BlockScreenOverlay = () => {
     const element = useRef<HTMLDivElement>(null);
     const { appState } = useContext(AppContext)!;
 
-    const classes = [styles['contact-overlay']];
-    if (appState.blockScreen) classes.push(styles['contact-overlay--active']);
+    const classes = [styles['block-screen-overlay']];
+    if (appState.blockScreen)
+        classes.push(styles['block-screen-overlay--active']);
 
     useEffect(() => {
         if (element.current === null) return;
@@ -25,4 +26,4 @@ const ContactOverlay = () => {
     return <div ref={element} className={classes.join(' ')}></div>;
 };
 
-export default ContactOverlay;
+export default BlockScreenOverlay;

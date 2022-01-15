@@ -4,6 +4,7 @@ interface AppState {
     chosenLocale: null | 'en' | 'de';
     blockScreen: boolean;
     imageOpen: false | ImageOpen;
+    contactActive: boolean;
 }
 
 interface ImageOpen {
@@ -25,12 +26,14 @@ export const APP_ACTION_TYPES = {
     SET_BLOCK_SCREEN: 'SET_BLOCK_SCREEN',
     SET_CHOSEN_LOCALE: 'SET_LANGUAGE',
     SET_IMAGE_OPEN: 'SET_IMAGE_OPEN',
+    SET_CONTACT_ACTIVE: 'SET_CONTACT_ACTIVE',
 };
 
 const appInitialState: AppState = {
     chosenLocale: null,
     blockScreen: false,
     imageOpen: false,
+    contactActive: false,
 };
 
 const appReducer = (appState: AppState, action: Action): AppState => {
@@ -41,6 +44,12 @@ const appReducer = (appState: AppState, action: Action): AppState => {
             return { ...appState, chosenLocale: action.payload };
         case APP_ACTION_TYPES.SET_IMAGE_OPEN:
             return { ...appState, imageOpen: action.payload };
+        case APP_ACTION_TYPES.SET_CONTACT_ACTIVE:
+            return {
+                ...appState,
+                contactActive: action.payload,
+                blockScreen: action.payload,
+            };
         default:
             return appState;
     }

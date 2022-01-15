@@ -59,6 +59,10 @@ const EducationCard: React.FC<EducationInfo> = ({
                                         imgAlt: title,
                                     },
                                 });
+                                appDispatch({
+                                    type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
+                                    payload: true,
+                                });
                             }}
                         >
                             {buttonText}

@@ -4,7 +4,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--color-dark-1-backdrop);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,15 +21,29 @@
         max-height: 80%;
         position: relative;
         height: 85%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow: auto;
 
-        > div {
-            max-height: 100%;
+        &::-webkit-scrollbar {
+            display: none;
         }
+    }
 
-        img {
-            height: 100% !important;
-            width: auto !important;
-            min-width: auto !important;
+    &__image {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    &--zoomed {
+        display: flex;
+
+        .image-viewer__image {
+            height: 150%;
+            width: auto;
         }
     }
 

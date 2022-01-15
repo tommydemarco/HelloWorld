@@ -39,6 +39,10 @@
     @media (max-width: 500px) {
       padding-bottom: 125px;
     }
+
+    @media (min-height: 970px) {
+      padding-bottom: 125px;
+    }
   }
 
   &__section-middle {

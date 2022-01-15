@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
-import Image from 'next/image';
+import { useRef, useState, useEffect, useContext } from 'react';
 import React from '../../assets/svgs/logo-react.svg';
 
 import Close from '../../assets/svgs/close-outline.svg';
@@ -18,36 +17,51 @@ const ImageViewer: React.FC<ImageViewerProps> = ({ imgSrc, imgAlt }) => {
     const { appDispatch } = useContext(AppContext)!;
 
     const [active, setActive] = useState<boolean>(false);
+    const [zoomed, setZoomed] = useState<boolean>(false);
+
+    const element = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setActive(true);
+        if (!element.current) return;
+        const triggerZoom = () => {
+            setZoomed((prevState) => !prevState);
+        };
+        const image = element.current.querySelector('img');
+        image?.addEventListener('click', triggerZoom);
+        return () => {
+            image?.removeEventListener('click', triggerZoom);
+        };
     }, []);
 
     const classes = [styles['image-viewer']];
     if (active) classes.push(styles['image-viewer--active']);
+    if (zoomed) classes.push(styles['image-viewer--zoomed']);
 
     return (
-        <div className={classes.join(' ')}>
+        <div className={classes.join(' ')} ref={element}>
             <button
                 type="button"
                 title="close"
-                onClick={() =>
+                onClick={() => {
                     appDispatch({
                         type: APP_ACTION_TYPES.SET_IMAGE_OPEN,
                         payload: false,
-                    })
-                }
+                    });
+                    appDispatch({
+                        type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
+                        payload: false,
+                    });
+                }}
                 className={styles['image-viewer__close-button']}
             >
                 <Close />
             </button>
             <div className={styles['image-viewer__container']}>
-                <Image
+                <img
                     src={imgSrc}
                     alt={imgAlt}
-                    width="1000"
-                    height="500"
-                    layout="fixed"
+                    className={styles['image-viewer__image']}
                 />
             </div>
             <div className={styles['image-viewer__loading']}>

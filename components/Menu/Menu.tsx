@@ -35,7 +35,10 @@ const Menu: React.FC<MenuProps> = ({ links }) => {
     };
 
     return (
-        <div className={menuClasses.join(' ')}>
+        <div
+            className={menuClasses.join(' ')}
+            style={{ opacity: appState.blockScreen ? '0.7' : '1' }}
+        >
             <button
                 aria-label="menu"
                 className={buttonClasses.join(' ')}

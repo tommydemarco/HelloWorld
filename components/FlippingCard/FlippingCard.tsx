@@ -1,7 +1,7 @@
 import { useEffect, useContext } from 'react';
 
+import BlockScreenOverlay from '../BlockScreenOverlay';
 import Close from '../../assets/svgs/close-circle-outline.svg';
-import ContactOverlay from '../ContactOverlay';
 
 // context
 import { AppContext, APP_ACTION_TYPES } from '../../context';
@@ -22,17 +22,18 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
     const rotationDegree = translateOf * 1.8;
 
     const classes = [styles['flipping-card']];
-    if (appState.blockScreen) classes.push(styles['flipping-card--highlight']);
+    if (appState.contactActive)
+        classes.push(styles['flipping-card--highlight']);
 
     useEffect(() => {
-        if (appState.blockScreen === false) {
+        if (appState.contactActive === false) {
             document.body.scrollTop = 100;
         }
-    }, [appState.blockScreen]);
+    }, [appState.contactActive]);
 
     return (
         <>
-            <ContactOverlay />
+            <BlockScreenOverlay />
             <div className={classes.join(' ')}>
                 {appState.blockScreen && (
                     <style>
@@ -47,7 +48,7 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
                     className={styles['flipping-card__close-highlight']}
                     onClick={() =>
                         appDispatch({
-                            type: APP_ACTION_TYPES.SET_CONTACT_HIGHLIGHT,
+                            type: APP_ACTION_TYPES.SET_CONTACT_ACTIVE,
                             payload: false,
                         })
                     }
