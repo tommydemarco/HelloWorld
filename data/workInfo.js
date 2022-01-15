@@ -49,7 +49,7 @@ export const workInfo = {
                 timeRange: 'Dezember 2020 - Aktueller Job',
                 company: 'oddity',
                 description:
-                    'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Ich arbeite in großen Entwicklerteams in einem Agile/Scrum-Workflow an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
+                    'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Der Arbeit erfolgt in großen Entwicklerteams (in einem Agile/Scrum-Workflow) und an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
             },
             {
                 title: 'Freelancer Web Developer',
