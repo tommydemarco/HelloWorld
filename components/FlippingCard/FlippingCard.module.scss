@@ -1,5 +1,5 @@
 .flipping-card {
-    perspective: 600px;
+    perspective: 800px;
     position: relative;
     display: block;
     height: 100%;
@@ -12,7 +12,7 @@
         height: 100%;
         position: relative;
         transform-style: preserve-3d;
-        transform-origin: center right;
+        transform-origin: center center;
         background-image: linear-gradient(
     90deg
     ,var(--color-headline-1),var(--color-headline-2));

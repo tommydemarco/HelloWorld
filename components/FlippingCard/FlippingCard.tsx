@@ -58,7 +58,7 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
                 </button>
                 <div
                     style={{
-                        transform: ' rotateY(-' + rotationDegree + 'deg)',
+                        transform: ' rotateX(-' + rotationDegree + 'deg)',
                     }}
                     className={styles['flipping-card__content']}
                 >
