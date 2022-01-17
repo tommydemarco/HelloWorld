@@ -34,7 +34,16 @@ const FlippingCard: React.FC<FlippingCardProps> = ({
     return (
         <>
             <BlockScreenOverlay />
-            <div className={classes.join(' ')}>
+            <div
+                className={classes.join(' ')}
+                style={{
+                    //@ts-ignore
+                    zIndex:
+                        appState.blockScreen && !appState.contactActive
+                            ? '-1'
+                            : '10',
+                }}
+            >
                 {appState.blockScreen && (
                     <style>
                         {`
