@@ -5,6 +5,7 @@ import JavaScript from '../assets/svgs/logo-javascript.svg';
 import CSS from '../assets/svgs/logo-css3.svg';
 import Python from '../assets/svgs/logo-python.svg';
 import Google from '../assets/svgs/logo-google.svg';
+import Gitlab from '../assets/svgs/logo-gitlab.svg';
 
 export const stackInfo = {
     en: {
@@ -28,6 +29,12 @@ export const stackInfo = {
                 description:
                     'By far my favourite Frontend-Framework/Library, and not because I have a few bucks invested in Meta. I have worked on several big projects with React, I love JSX and a more declarative programming paradigm, and I particularly enjoy working with Frameworks based on React, such as Next.js and Gatsby, which I think really do an incredible job at providing a production ready environment.',
                 icon: <React />,
+            },
+            {
+                title: 'GitLab',
+                description:
+                    "I've been working with Gitlab on a daily basis for more than a year and I have experience with the most processes, from the simple creation of merge requests, to making code reviews and opening and conducting discussions on a certain feature, to semantic versioning of projects and more. At the moment most of the Projects that I work on are Trunk-Based, but I've also worked with other branching models.",
+                icon: <Gitlab />,
             },
             {
                 title: 'Vanilla JS',
@@ -76,6 +83,12 @@ export const stackInfo = {
                 description:
                     'Mein Lieblings-Frontend-Framework/Library, nicht nur weil ich ein paar Dollar in Meta investiert habe. Ich habe an mehreren großen Projekten mit React gearbeitet, ich liebe JSX und sein deklarativeres Programmierparadigma. Ich arbeite besonders gerne mit Frameworks, die auf React basieren: Next.js und Gatsby, die meiner Meinung nach wirklich eine produktionsbereite Umgebung liefern.',
                 icon: <React />,
+            },
+            {
+                title: 'GitLab',
+                description:
+                    'Ich arbeite seit mehr als einem Jahr täglich mit Gitlab und habe Erfahrung mit den meisten Prozessen, von der einfachen Erstellung von Merge-Requests, das Öffnen und Führen von Diskussionen zu einem bestimmten Feature bis hin zur semantischen Versionierung von Projekten. Im Moment haben die meisten Projekte, an denen ich arbeite, ein Trunk-Based-Schema, aber ich habe auch mit anderen Branching-Models gearbeitet.',
+                icon: <Gitlab />,
             },
             {
                 title: 'Vanilla JS',

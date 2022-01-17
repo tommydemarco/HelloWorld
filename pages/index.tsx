@@ -105,7 +105,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     sectionId="stack"
                     headline={stackInfo[chosenLocale].title}
                     subtext={stackInfo[chosenLocale].subtext}
-                    height="650vh"
+                    height="700vh"
                 >
                     {stackInfo[chosenLocale].stackList.map(
                         (stackInfo: StackInfo) => {

@@ -23,7 +23,7 @@ const ScrollableContent: React.FC<ScrollableContentProps> = ({
             if (element.current === null) return;
             if (
                 element.current.scrollTop + element.current.clientHeight >=
-                element.current?.scrollHeight
+                element.current?.scrollHeight - 2
             )
                 setBottomShadow(false);
             else setBottomShadow(true);
@@ -40,11 +40,11 @@ const ScrollableContent: React.FC<ScrollableContentProps> = ({
         if (element.current === null) return;
         if (
             element.current.scrollTop + element.current.clientHeight >=
-            element.current?.scrollHeight
+            element.current?.scrollHeight - 1
         )
             setBottomShadow(false);
         else setBottomShadow(true);
-        if (element.current.scrollTop > 10) setTopShadow(true);
+        if (element.current.scrollTop > 5) setTopShadow(true);
         else setTopShadow(false);
     };
 
