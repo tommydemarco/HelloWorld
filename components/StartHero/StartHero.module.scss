@@ -18,11 +18,16 @@
         > *:last-child {
           width: 50%;
           padding: 10px;
+
+          @media (max-width: 650px) {
+            width: 65%;
+          }
         }
 
         @media (max-width: 650px) {
           flex-direction: column;
           padding-top: 50px;
+          justify-content: center;
 
           > *:last-child {
             width: 100%;
