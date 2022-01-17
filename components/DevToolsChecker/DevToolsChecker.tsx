@@ -41,7 +41,6 @@ const DevToolsChecker: React.FC<DevToolsChecker> = ({ title, text }) => {
     }, [secondaryHeight, originalHeight, isConsoleOpen]);
 
     useEffect(() => {
-        console.log('CALLLED');
         appDispatch({
             type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
             payload: isConsoleOpen,
