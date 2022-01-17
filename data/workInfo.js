@@ -15,7 +15,7 @@ export const workInfo = {
                 timeRange: 'September 2015 - November 2020',
                 company: 'Freelancer/Side hustle',
                 description:
-                    'Freenalcer as side hustle in between my work experiences as Cabin Chief, mainly working for my ex professor of my Web Developer vocational training, mainly working on the Frontent of Wordpress-based sites in a Scrum workflow. Stack: jQuery, Vanilla JS, CSS.',
+                    'Freelancer as side hustle in between my work experiences as Cabin Chief, mainly working for my ex professor of my Web Developer vocational training, mainly working on the Frontent of Wordpress-based sites in a Scrum workflow. Stack: jQuery, Vanilla JS, CSS.',
             },
             {
                 title: 'Cabin Chief',
@@ -56,7 +56,7 @@ export const workInfo = {
                 timeRange: 'September 2015 - November 2020',
                 company: 'Freelancer/Side hustle',
                 description:
-                    'Freenalcer als Nebenbeschäftigung zwischen meinen Arbeitserfahrungen als Cabin Chief, hauptsächlich für meinen Ex-Lehrer meiner Ausbildung zum Web Developer tätig, ich habe am Frontent von Wordpress-basierten Webseiten in einem Scrum-Workflow gearbeitet. Stapel: jQuery, Vanilla JS, CSS.',
+                    'Freelancer als Nebenbeschäftigung zwischen meinen Arbeitserfahrungen als Cabin Chief, hauptsächlich für meinen Ex-Lehrer meiner Ausbildung zum Web Developer tätig, ich habe am Frontent von Wordpress-basierten Webseiten in einem Scrum-Workflow gearbeitet. Stapel: jQuery, Vanilla JS, CSS.',
             },
             {
                 title: 'Cabin Chief',
