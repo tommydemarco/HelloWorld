@@ -2,7 +2,7 @@ export const footerInfo = {
     en: {
         textTitle: 'Bye, World!',
         textBody:
-            'Thank you for checking out my website: if you found it interesting click on the contact button and get in touch! I look forward top it!',
+            'Thank you for checking out my website!',
         endText: 'Coded with ❤️ using Next.js and other cool stuff',
         github: {
             text: 'Github',
