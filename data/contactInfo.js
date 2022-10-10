@@ -1,7 +1,7 @@
 export const contactInfo = {
     en: {
-        headline: 'Contacts',
-        subtext: 'I look forward to hearing from you!',
+        headline: 'Contacts card',
+        subtext: "Let's do some networking!",
         name: 'Tommaso De Marco',
         profession: 'Frontend Developer',
         location: 'Stuttgart, Germany',
@@ -17,8 +17,8 @@ export const contactInfo = {
         },
     },
     de: {
-        headline: 'Kontakte',
-        subtext: 'Ich freue mich darauf, von Ihnen zu hören!',
+        headline: 'Contacts card',
+        subtext: 'Lass uns ein bisschen Networking machen!',
         name: 'Tommaso De Marco',
         profession: 'Frontend Entwickler',
         location: 'Stuttgart, Deutschland',
