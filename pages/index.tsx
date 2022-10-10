@@ -199,9 +199,6 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                     >
                         {footerInfo[chosenLocale].linkedin.text}
                     </FooterLink>
-                    <FooterLink element="button" onClick={scrollToContacts}>
-                        {footerInfo[chosenLocale].contacts.text}
-                    </FooterLink>
                     <FooterLink
                         element="link"
                         href={footerInfo[chosenLocale].codewars.link}
