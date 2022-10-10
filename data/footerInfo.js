@@ -12,9 +12,6 @@ export const footerInfo = {
             text: 'Linkedin',
             link: 'https://linkedin.com/in/tommasodemarco',
         },
-        contacts: {
-            text: 'Contact me',
-        },
         codewars: {
             text: 'Codewars',
             link: 'https://www.codewars.com/users/tommydemarco',
@@ -23,7 +20,7 @@ export const footerInfo = {
     de: {
         textTitle: 'Bye, World!',
         textBody:
-            'Vielen Dank, dass Sie sich auf meiner Website umgesehen haben: Wenn Sie es interessant fanden, klicken Sie auf den Kontakt-Button und nehmen Sie Kontakt mit mir auf!',
+            'Vielen Dank für Ihren Besuch',
         endText: 'Mit ❤️, Next.js und anderen coolen Sachen programmiert',
         github: {
             text: 'Github',
@@ -32,9 +29,6 @@ export const footerInfo = {
         linkedin: {
             text: 'Linkedin',
             link: 'https://linkedin.com/in/tommasodemarco',
-        },
-        contacts: {
-            text: 'Kontakte',
         },
         codewars: {
             text: 'Codewars',
