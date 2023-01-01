@@ -4,8 +4,15 @@ export const workInfo = {
         subtext: 'The timeline of my work experience',
         workList: [
             {
+                title: 'Frontend Developer',
+                timeRange: 'November 2023 - Current job',
+                company: 'oddity',
+                description:
+                    'Frontend developer in one of the biggest agencies in Germany, working on large and important projects in complex teams of developers in an Agile/Scrum workflow. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab workflow, Cypress and more.',
+            },
+            {
                 title: 'Junior Frontend Developer',
-                timeRange: 'December 2020 - Current job',
+                timeRange: 'December 2020 - October 2022',
                 company: 'oddity',
                 description:
                     'Frontend developer in one of the biggest agencies in Germany, working on large and important projects in complex teams of developers in an Agile/Scrum workflow. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab workflow, Cypress and more.',
