@@ -5,7 +5,7 @@ export const workInfo = {
         workList: [
             {
                 title: 'Frontend Developer',
-                timeRange: 'November 2023 - Current job',
+                timeRange: 'November 2022 - Current job',
                 company: 'oddity',
                 description:
                     'Frontend developer in one of the biggest agencies in Germany, working on large and important projects in complex teams of developers in an Agile/Scrum workflow. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab workflow, Cypress and more.',
@@ -52,8 +52,15 @@ export const workInfo = {
         subtext: 'Die Zeitleiste meiner Berufserfahrung',
         workList: [
             {
+                title: 'Frontend Developer',
+                timeRange: 'November 2022 - Aktueller job',
+                company: 'oddity',
+                description:
+                    'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Der Arbeit erfolgt in großen Entwicklerteams (in einem Agile/Scrum-Workflow) und an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
+            },
+            {
                 title: 'Junior Frontend Developer',
-                timeRange: 'Dezember 2020 - Aktueller Job',
+                timeRange: 'Dezember 2020 - Oktober 2022',
                 company: 'oddity',
                 description:
                     'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Der Arbeit erfolgt in großen Entwicklerteams (in einem Agile/Scrum-Workflow) und an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
