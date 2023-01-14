@@ -5,7 +5,7 @@ export const footerInfo = {
             'Thank you for checking out my website!',
         endText: 'Coded with ❤️ using Next.js and other cool stuff',
         github: {
-            text: 'Github',
+            text: 'GitHub',
             link: 'https://github.com/tommydemarco',
         },
         linkedin: {
