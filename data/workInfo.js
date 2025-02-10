@@ -5,15 +5,22 @@ export const workInfo = {
         workList: [
             {
                 title: 'Frontend Developer',
-                timeRange: 'November 2022 - Current job',
-                company: 'oddity',
+                timeRange: 'May 2023 - Current job',
+                company: 'ADM Mediaconsulting SA',
+                description:
+                    'Frontend developer working on video straming platforms and data visualization and analysis platforms. Working in complex teams of developers in an Agile/Scrum workflow. Stack: React, Next.js, Storybook, GitHub workflows, Cypress, and more.',
+            },
+            {
+                title: 'Frontend Developer',
+                timeRange: 'November 2022 - May 2023',
+                company: 'WongDoody',
                 description:
                     'Frontend developer in one of the biggest agencies in Germany, working on large and important projects in complex teams of developers in an Agile/Scrum workflow. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab workflow, Cypress and more.',
             },
             {
                 title: 'Junior Frontend Developer',
                 timeRange: 'December 2020 - October 2022',
-                company: 'oddity',
+                company: 'WongDoody',
                 description:
                     'Frontend developer in one of the biggest agencies in Germany, working on large and important projects in complex teams of developers in an Agile/Scrum workflow. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab workflow, Cypress and more.',
             },
@@ -53,15 +60,22 @@ export const workInfo = {
         workList: [
             {
                 title: 'Frontend Developer',
-                timeRange: 'November 2022 - Aktueller job',
-                company: 'oddity',
+                timeRange: 'May 2023 - bis heute',
+                company: 'ADM Mediaconsulting SA',
+                description:
+                    'Frontend-Entwickler mit Erfahrung in Video-Streaming-Plattformen sowie Datenvisualisierungs- und Analyseplattformen. Tätigkeit in komplexen Entwicklerteams innerhalb eines Agile/Scrum-Workflows. Tech-Stack: React, Next.js, Storybook, GitHub Workflows, Cypress und mehr.',
+            },
+            {
+                title: 'Frontend Developer',
+                timeRange: 'November 2022 - May 2023',
+                company: 'WongDoody',
                 description:
                     'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Der Arbeit erfolgt in großen Entwicklerteams (in einem Agile/Scrum-Workflow) und an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
             },
             {
                 title: 'Junior Frontend Developer',
                 timeRange: 'Dezember 2020 - Oktober 2022',
-                company: 'oddity',
+                company: 'WongDoody',
                 description:
                     'Frontend-Entwickler in einer der größten Agenturen Deutschlands. Der Arbeit erfolgt in großen Entwicklerteams (in einem Agile/Scrum-Workflow) und an großen Projekten für bekannte Kunden. Stack: React, Stencil, Next.js, Gatsby, Storybook, Vanilla JS, Gitlab-Workflow, Cypress und mehr.',
             },

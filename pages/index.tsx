@@ -97,7 +97,7 @@ const Home: React.FC<HomePageProps> = ({ locale }) => {
                 <StartHero
                     headline={startInfo[chosenLocale].helloWorld}
                     subtext={startInfo[chosenLocale].subtext}
-                    imageSrc="/portrait-min.jpg"
+                    imageSrc="/profile-image.jpeg"
                     imageAlt={startInfo[chosenLocale].imageAlt}
                     buttonText={startInfo[chosenLocale].buttonText}
                 />

@@ -6,12 +6,19 @@ import CSS from '../assets/svgs/logo-css3.svg';
 import Python from '../assets/svgs/logo-python.svg';
 import Google from '../assets/svgs/logo-google.svg';
 import Gitlab from '../assets/svgs/logo-gitlab.svg';
+import GitHub from '../assets/svgs/logo-github.svg';
 
 export const stackInfo = {
     en: {
         title: 'My Stack',
         subtext: 'The technologies I have the most experience working with',
         stackList: [
+            {
+                title: 'React',
+                description:
+                    'By far my favourite Frontend-Framework/Library, and not because I have a few bucks invested in Meta. I have worked on several big projects with React, I love JSX and a more declarative programming paradigm, and I particularly enjoy working with Frameworks based on React, such as Next.js and Gatsby, which I think really do an incredible job at providing a production ready environment.',
+                icon: <React />,
+            },
             {
                 title: 'Stencil',
                 description:
@@ -25,10 +32,11 @@ export const stackInfo = {
                 icon: <Vue />,
             },
             {
-                title: 'React',
+                title: 'GitHub Copilot',
                 description:
-                    'By far my favourite Frontend-Framework/Library, and not because I have a few bucks invested in Meta. I have worked on several big projects with React, I love JSX and a more declarative programming paradigm, and I particularly enjoy working with Frameworks based on React, such as Next.js and Gatsby, which I think really do an incredible job at providing a production ready environment.',
-                icon: <React />,
+                    'I have been working regularly with GitHub Copilot for over a year and have extensive experience in efficiently utilizing AI-assisted code completion. I carefully analyze and validate the generated suggestions to ensure they meet the requirements for code quality, best practices, and project specifications.',
+
+                icon: <GitHub />,
             },
             {
                 title: 'GitLab',
@@ -67,6 +75,12 @@ export const stackInfo = {
         subtext: 'Die Technologien, mit denen ich am meisten Erfahrung habe',
         stackList: [
             {
+                title: 'React',
+                description:
+                    'Mein Lieblings-Frontend-Framework/Library, nicht nur weil ich ein paar Dollar in Meta investiert habe. Ich habe an mehreren großen Projekten mit React gearbeitet, ich liebe JSX und sein deklarativeres Programmierparadigma. Ich arbeite besonders gerne mit Frameworks, die auf React basieren: Next.js und Gatsby, die meiner Meinung nach wirklich eine produktionsbereite Umgebung liefern.',
+                icon: <React />,
+            },
+            {
                 title: 'Stencil',
                 description:
                     'Ich habe im letzten Jahr viel mit Stencil gearbeitet, um ein Designsystem für eine große Webinfrastruktur aufzubauen. Ich arbeite gerne mit Webkomponenten und finde die Stencil-Syntax sehr interessant. Die Arbeit mit dieser Technologie hat es mir ermöglicht, Erfahrungen mit heikle Entscheidungen zu machen, die sich auch auf andere Teile der Infrastruktur auswirken könnten.',
@@ -79,10 +93,10 @@ export const stackInfo = {
                 icon: <Vue />,
             },
             {
-                title: 'React',
+                title: 'GitHub Copilot',
                 description:
-                    'Mein Lieblings-Frontend-Framework/Library, nicht nur weil ich ein paar Dollar in Meta investiert habe. Ich habe an mehreren großen Projekten mit React gearbeitet, ich liebe JSX und sein deklarativeres Programmierparadigma. Ich arbeite besonders gerne mit Frameworks, die auf React basieren: Next.js und Gatsby, die meiner Meinung nach wirklich eine produktionsbereite Umgebung liefern.',
-                icon: <React />,
+                    'Ich arbeite seit mehr als einem Jahr regelmäßig mit GitHub Copilot und verfüge über umfassende Erfahrung in der effizienten Nutzung KI-gestützter Code-Vervollständigung. Dabei analysiere und validiere ich die generierten Vorschläge sorgfältig, um sicherzustellen, dass sie den Anforderungen an Code-Qualität, Best Practices und Projektspezifikationen entsprechen.',
+                icon: <GitHub />,
             },
             {
                 title: 'GitLab',

@@ -48,26 +48,32 @@ const EducationCard: React.FC<EducationInfo> = ({
                     >
                         {description}
                     </div>
-                    <div className={styles['education-card__button-container']}>
-                        <Button
-                            secondary
-                            onClick={() => {
-                                appDispatch({
-                                    type: APP_ACTION_TYPES.SET_IMAGE_OPEN,
-                                    payload: {
-                                        imgSrc: assetLink,
-                                        imgAlt: title,
-                                    },
-                                });
-                                appDispatch({
-                                    type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
-                                    payload: true,
-                                });
-                            }}
+                    {buttonText && (
+                        <div
+                            className={
+                                styles['education-card__button-container']
+                            }
                         >
-                            {buttonText}
-                        </Button>
-                    </div>
+                            <Button
+                                secondary
+                                onClick={() => {
+                                    appDispatch({
+                                        type: APP_ACTION_TYPES.SET_IMAGE_OPEN,
+                                        payload: {
+                                            imgSrc: assetLink,
+                                            imgAlt: title,
+                                        },
+                                    });
+                                    appDispatch({
+                                        type: APP_ACTION_TYPES.SET_BLOCK_SCREEN,
+                                        payload: true,
+                                    });
+                                }}
+                            >
+                                {buttonText}
+                            </Button>
+                        </div>
+                    )}
                 </div>
             </ScrollableContent>
             <div className={styles['education-card__icon-background']}>

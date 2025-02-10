@@ -4,6 +4,16 @@ export const educationInfo = {
         subtext: 'My education path & certifications',
         educationList: [
             {
+                title: 'B.Sc Business and IT',
+                type: 'Bachelor of Science',
+                organization: 'IU internationale Hochschule',
+                time: 'February 2022 - expected March 2025',
+                description:
+                    'Knowledge in computer science, mathematics, and programming applied to the operational aspects of a business',
+                buttonText: null,
+                assetLink: null,
+            },
+            {
                 title: 'Web Programming with python and Javascript',
                 type: 'certification',
                 organization: 'HarvardX',
@@ -68,6 +78,16 @@ export const educationInfo = {
         title: 'Ausbildung',
         subtext: 'Meine Ausbildung und Zertifizierungen',
         educationList: [
+            {
+                title: 'B.Sc Business and IT',
+                type: 'Bachelor of Science',
+                organization: 'IU internationale Hochschule',
+                time: 'Februar 2022 - voraussichtlich März 2025',
+                description:
+                    'Kenntnisse in Informatik, Mathematik und Programmierung, angewandt auf die operativen Aspekte eines Unternehmens',
+                buttonText: null,
+                assetLink: null,
+            },
             {
                 title: 'Web Programming with python and Javascript',
                 type: 'certification',

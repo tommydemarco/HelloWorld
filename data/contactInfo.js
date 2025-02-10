@@ -18,7 +18,7 @@ export const contactInfo = {
     },
     de: {
         headline: 'Contacts card',
-        subtext: 'Lass uns ein bisschen Networking machen!',
+        subtext: 'Kontaktieren Sie mich gerne!',
         name: 'Tommaso De Marco',
         profession: 'Frontend Entwickler',
         location: 'Stuttgart, Deutschland',
